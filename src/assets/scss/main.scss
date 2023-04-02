@@ -1,0 +1,20 @@
+@import 'global';
+@import 'card';
+
+:root {
+    --swiper-navigation-color: white !important;
+    --swiper-theme-color: white !important;
+}
+
+body {
+    @apply text-base
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply text-title;
+}

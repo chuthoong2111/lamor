@@ -1,0 +1,77 @@
+{
+  "pagetitleIndex": "Dr Vương",
+  "main": {
+    "dichvu-slide": [
+      {
+        "img": "img-dang",
+        "text": "Dáng"
+      },
+      {
+        "img": "img-moi",
+        "text": "Tạo môi trái tim"
+      },
+      {
+        "img": "img-hut-mo",
+        "text": "Hút mỡ Ultra Sound"
+      },
+      {
+        "img": "img-nguc",
+        "text": "Nâng Ngực Nano Plasma"
+      },
+      {
+        "img": "img-dang",
+        "text": "Dáng"
+      },
+      {
+        "img": "img-moi",
+        "text": "Tạo môi trái tim"
+      },
+      {
+        "img": "img-hut-mo",
+        "text": "Hút mỡ Ultra Sound"
+      },
+      {
+        "img": "img-nguc",
+        "text": "Nâng Ngực Nano Plasma"
+      }
+    ],
+    "detail": [
+      "Nâng ngực bằng sóng siêu âm",
+      "Nâng ngực không chạm",
+      "Phun hồng nhũ hoa – Tất tần tật những điều cần biết",
+      "Cắt tuyến vú phụ ở nách có thực sự cần thiết?",
+      "Nâng ngực size bao nhiêu là đẹp?"
+    ],
+    "service": {
+      "ul": [
+        "Chọn túi nâng ngực",
+        "Nội soi nâng ngực",
+        "Treo ngực sa trễ"
+      ],
+      "ul1": [
+        "Thu gọn quầng vú",
+        "Nâng núm vú tụt",
+        "Thu gọn đầu ti"
+      ]
+    }
+  },
+  "footer": {
+    "center": [
+      "Thẩm mỹ ngực",
+      "Hút cấy mỡ",
+      "Thẩm mỹ mắt",
+      "Thẩm mỹ mũi",
+      "Thẩm mỹ vòng 2",
+      "Thẩm mỹ khác"
+    ],
+    "address": "Số 10 phố Vũ Thạnh, Ô Chợ Dừa, Đống Đa, Hà Nội",
+    "phone": "1900 1080",
+    "reserved": "© 2022 Dr Vương - All Rights Reserved.",
+    "social": [
+      "icon-whatsapp",
+      "icon-twitter",
+      "icon-instagram",
+      "icon-facebook"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "remixicon": "^2.5.0",
+    "swiper": "^9.1.0",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-static-copy": "^0.13.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.0.4"
+  }
+}
