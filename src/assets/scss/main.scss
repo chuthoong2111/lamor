@@ -1,9 +1,16 @@
 @import 'global';
 @import 'card';
+@import 'header';
 
 :root {
-    --swiper-navigation-color: white !important;
-    --swiper-theme-color: white !important;
+    --swiper-navigation-color: theme('colors.primary.DEFAULT') !important;
+    --swiper-theme-color: theme('colors.primary.DEFAULT') !important;
+}
+
+button,
+a,
+a:hover {
+    @apply transition-all duration-300 ease-in-out
 }
 
 body {
@@ -17,4 +24,17 @@ h4,
 h5,
 h6 {
     @apply text-title;
+}
+
+.all-amenities {
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+
+        border-top: 20px solid #fff;
+        @apply absolute left-1/2 -translate-x-1/2 top-0 z-20
+    }
 }

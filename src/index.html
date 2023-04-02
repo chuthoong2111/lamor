@@ -13,11 +13,104 @@
     {{> layout/header }}
     {{> banners/banner }}
     {{> cards/cardText }}
+    <section class="pb-16 px-3 bg-white" id="-2">
+        <div class="container mx-auto">
+            <div class="flex items-center mb-6">
+                <h2 class="text-3xl font-display first-letter:text-primary leading-tight">ROOM CATEGORIES</h2>
+                <a href="#"
+                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
+                    more</a>
+            </div>
+            <div class="swiper roomSwiper !p-4 !-m-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination !bottom-4"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+    <section class="py-16 px-3 bg-primary-section" id="-3">
+        <div class="container mx-auto">
+            <div class="flex items-center mb-6">
+                <h2 class="text-3xl font-display first-letter:text-primary leading-tight">OUR ITINERARIES</h2>
+                <a href="#"
+                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
+                    more</a>
+            </div>
+            <div class="swiper tourSwiper !p-4 !-m-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination !bottom-4"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+    <section class="py-16 bg-white" id="-4">
+        <div class="content-baseline mx-auto">
+            <div class="container px-3 mx-auto flex items-center mb-6">
+                <h2 class="text-3xl font-display first-letter:text-primary leading-tight">CRUISE AMENITIES</h2>
+                <a href="#"
+                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
+                    more</a>
+            </div>
+            <div class="flex">
+                <div
+                    class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 bg-primary gap-0.5 all-amenities relative overflow-hidden">
+                    {{> cards/cardOverlay }}
+                    {{> cards/cardOverlay }}
+                    {{> cards/cardOverlay }}
+                    {{> cards/cardOverlay }}
+                    {{> cards/cardOverlay }}
+                </div>
+                <button class="w-24 text-3xl bg-primary text-white hover:bg-primary-dark">+</button>
+            </div>
+    </section>
+    <section class="pb-16 px-3 bg-white" id="-5">
+        <div class="container mx-auto">
+            <div class="flex items-center mb-6">
+                <h2 class="text-3xl font-display first-letter:text-primary leading-tight">CRUISE ACTIVITIES</h2>
+                <a href="#"
+                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
+                    more</a>
+            </div>
+            <div class="grid grid-rows-3 grid-flow-col gap-4">
+                <div class="row-span-3 ...">01</div>
+                <div class="col-span-2 ...">02</div>
+                <div class="row-span-2 col-span-2 ...">03</div>
+            </div>
+        </div>
+    </section>
     <section class="py-16 px-3 bg-primary-section">
         <div class="container mx-auto">
             <div class="flex items-center mb-6">
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">WHERE WE CRUISE</h2>
-                <button class="ms-auto">Explore more</button>
+                <a href="#"
+                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
+                    more</a>
             </div>
             <div class="grid gap-4 grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:gap-8">
                 {{> cards/cardNoicon }}
