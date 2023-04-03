@@ -37,4 +37,12 @@ h6 {
         border-top: 20px solid #fff;
         @apply absolute left-1/2 -translate-x-1/2 top-0 z-20
     }
+
+    @media (max-width: theme('screens.lg')) {
+        .card {
+            &:nth-child(5) {
+                display: none;
+            }
+        }
+    }
 }
