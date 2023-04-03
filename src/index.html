@@ -13,13 +13,14 @@
     {{> layout/header }}
     {{> banners/banner }}
     {{> cards/cardText }}
-    <section class="pb-16 px-3 bg-white" id="-2">
+    <section class="pb-16 px-4 bg-white" id="-2">
         <div class="container mx-auto">
             <div class="flex items-center mb-6">
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">ROOM CATEGORIES</h2>
                 <a href="#"
-                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
-                    more</a>
+                    class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
+                        class="ri-add-line"></i> <span class="hidden md:block">Explore
+                        more</span></a>
             </div>
             <div class="swiper roomSwiper !p-4 !-m-4">
                 <div class="swiper-wrapper">
@@ -41,13 +42,14 @@
                 <div class="swiper-button-next"></div>
             </div>
     </section>
-    <section class="py-16 px-3 bg-primary-section" id="-3">
+    <section class="py-16 px-4 bg-primary-section" id="-3">
         <div class="container mx-auto">
             <div class="flex items-center mb-6">
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">OUR ITINERARIES</h2>
                 <a href="#"
-                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
-                    more</a>
+                    class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
+                        class="ri-add-line"></i> <span class="hidden">Explore
+                        more</span></a>
             </div>
             <div class="swiper tourSwiper !p-4 !-m-4">
                 <div class="swiper-wrapper">
@@ -69,13 +71,14 @@
                 <div class="swiper-button-next"></div>
             </div>
     </section>
-    <section class="py-16 bg-white" id="-4">
+    <section class="py-16  bg-white" id="-4">
         <div class="content-baseline mx-auto">
             <div class="container px-3 mx-auto flex items-center mb-6">
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">CRUISE AMENITIES</h2>
                 <a href="#"
-                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
-                    more</a>
+                    class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
+                        class="ri-add-line"></i> <span class="hidden">Explore
+                        more</span></a>
             </div>
             <div class="flex">
                 <div
@@ -86,31 +89,49 @@
                     {{> cards/cardOverlay }}
                     {{> cards/cardOverlay }}
                 </div>
-                <button class="w-24 text-3xl bg-primary text-white hover:bg-primary-dark">+</button>
+                <button class="w-12 lg:w-24 text-3xl bg-primary text-white hover:bg-primary-dark">+</button>
             </div>
     </section>
-    <section class="pb-16 px-3 bg-white" id="-5">
+    <section class="pb-16 px-4 bg-white" id="-5">
         <div class="container mx-auto">
             <div class="flex items-center mb-6">
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">CRUISE ACTIVITIES</h2>
                 <a href="#"
-                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
-                    more</a>
+                    class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
+                        class="ri-add-line"></i> <span class="hidden">Explore
+                        more</span></a>
             </div>
-            <div class="grid grid-rows-3 grid-flow-col gap-4">
-                <div class="row-span-3 ...">01</div>
-                <div class="col-span-2 ...">02</div>
-                <div class="row-span-2 col-span-2 ...">03</div>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="flex align-items-center bg-slate-100">
+                    <a data-glightbox="" data-gallery="gallery" href="assets/images/bg/16.jpg">
+                        <div class="card card-element-hover card-overlay-hover overflow-hidden">
+                            <!-- Image -->
+                            <img src="plac" class="rounded-3" alt="">
+                            <!-- Full screen button -->
+                            <div class="hover-element w-100 h-100">
+                                <i
+                                    class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+                            </div>
+                        </div>
+                    </a> {{> cards/cardNoicon }}
+                </div>
+                <div class="flex bg-slate-100">
+                    {{> cards/cardNoicon }}
+                </div>
+                <div class="flex bg-slate-100">
+                    {{> cards/cardNoicon }} {{> cards/cardNoicon }}
+                </div>
             </div>
         </div>
     </section>
-    <section class="py-16 px-3 bg-primary-section">
+    <section class="py-16 px-4 bg-primary-section">
         <div class="container mx-auto">
             <div class="flex items-center mb-6">
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">WHERE WE CRUISE</h2>
                 <a href="#"
-                    class="ms-auto px-4 py-2 rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white">Explore
-                    more</a>
+                    class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
+                        class="ri-add-line"></i> <span class="hidden">Explore
+                        more</span></a>
             </div>
             <div class="grid gap-4 grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:gap-8">
                 {{> cards/cardNoicon }}
