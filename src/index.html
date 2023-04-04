@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    {{> layout/header }}
+    {{> layouts/header }}
     {{> banners/banner }}
     {{> cards/cardText }}
     <section class="pb-16 px-4 bg-white" id="-2">
@@ -93,40 +93,7 @@
             </div>
     </section>
     <section class="pb-16 px-4 bg-white" id="-5">
-        <div class="container mx-auto">
-            <div class="flex items-center mb-6">
-                <h2 class="text-3xl font-display first-letter:text-primary leading-tight">CRUISE ACTIVITIES</h2>
-                <a href="#"
-                    class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
-                        class="ri-add-line"></i> <span class="hidden md:block">Explore
-                        more</span></a>
-            </div>
-            <div class="grid grid-cols-3 gap-16">
-                <div class="flex flex-row items-center gap-16 align-items-center">
-                    <div class="relative w-1/2">
-                        <img class="aspect-[3/4] object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
-                    </div>
-                    <div class="relative flex flex-col gap-16 w-1/2">
-                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
-                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
-                    </div>
-                    
-                </div>
-                <div class="flex relative">
-                    <img class="aspect-[3/4] object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
-                </div>
-                <div class="flex flex-row-reverse items-center gap-16 align-items-center">
-                    <div class="relative w-1/2">
-                        <img class="aspect-[3/4] object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
-                    </div>
-                    <div class="relative flex flex-col gap-16 w-1/2">
-                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
-                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+        {{> layouts/layoutGalery }}
     </section>
     <section class="py-16 px-4 bg-primary-section">
         <div class="container mx-auto">
@@ -145,7 +112,7 @@
             </div>
     </section>
 
-    {{> layout/footer }}
+    {{> layouts/footer }}
 </body>
 <script type="module" src="./assets/js/main.js"></script>
 
