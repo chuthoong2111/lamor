@@ -48,7 +48,7 @@
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">OUR ITINERARIES</h2>
                 <a href="#"
                     class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
-                        class="ri-add-line"></i> <span class="hidden">Explore
+                        class="ri-add-line"></i> <span class="hidden md:block">Explore
                         more</span></a>
             </div>
             <div class="swiper tourSwiper !p-4 !-m-4">
@@ -77,7 +77,7 @@
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">CRUISE AMENITIES</h2>
                 <a href="#"
                     class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
-                        class="ri-add-line"></i> <span class="hidden">Explore
+                        class="ri-add-line"></i> <span class="hidden md:block">Explore
                         more</span></a>
             </div>
             <div class="flex">
@@ -98,28 +98,32 @@
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">CRUISE ACTIVITIES</h2>
                 <a href="#"
                     class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
-                        class="ri-add-line"></i> <span class="hidden">Explore
+                        class="ri-add-line"></i> <span class="hidden md:block">Explore
                         more</span></a>
             </div>
-            <div class="grid grid-cols-3 gap-4">
-                <div class="flex align-items-center bg-slate-100">
-                    <a data-glightbox="" data-gallery="gallery" href="assets/images/bg/16.jpg">
-                        <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                            <!-- Image -->
-                            <img src="plac" class="rounded-3" alt="">
-                            <!-- Full screen button -->
-                            <div class="hover-element w-100 h-100">
-                                <i
-                                    class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                            </div>
-                        </div>
-                    </a> {{> cards/cardNoicon }}
+            <div class="grid grid-cols-3 gap-16">
+                <div class="flex flex-row items-center gap-16 align-items-center">
+                    <div class="relative w-1/2">
+                        <img class="aspect-[3/4] object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
+                    </div>
+                    <div class="relative flex flex-col gap-16 w-1/2">
+                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
+                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
+                    </div>
+                    
                 </div>
-                <div class="flex bg-slate-100">
-                    {{> cards/cardNoicon }}
+                <div class="flex relative">
+                    <img class="aspect-[3/4] object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
                 </div>
-                <div class="flex bg-slate-100">
-                    {{> cards/cardNoicon }} {{> cards/cardNoicon }}
+                <div class="flex flex-row-reverse items-center gap-16 align-items-center">
+                    <div class="relative w-1/2">
+                        <img class="aspect-[3/4] object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
+                    </div>
+                    <div class="relative flex flex-col gap-16 w-1/2">
+                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
+                        <img class="aspect-square object-cover" src="https://placehold.jp/600x800.png" loading="lazy" alt="#">
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -130,7 +134,7 @@
                 <h2 class="text-3xl font-display first-letter:text-primary leading-tight">WHERE WE CRUISE</h2>
                 <a href="#"
                     class="ms-auto px-4 py-2 flex items-center rounded-md tracking-widest text-sm border border-primary text-primary hover:bg-primary  hover:text-white"><i
-                        class="ri-add-line"></i> <span class="hidden">Explore
+                        class="ri-add-line"></i> <span class="hidden md:block">Explore
                         more</span></a>
             </div>
             <div class="grid gap-4 grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:gap-8">
