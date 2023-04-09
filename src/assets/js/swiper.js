@@ -87,3 +87,18 @@ const swiper3 = new Swiper(".tourSwiper", {
 		prevEl: ".swiper-button-prev",
 	},
 });
+const swiper4 = new Swiper(".testimonialSwiper", {
+	modules: [Navigation, Pagination],
+	slidesPerView: 1,
+	spaceBetween: 20,
+	slidesPerGroup: 1,
+
+	pagination: {
+		el: ".swiper-pagination",
+	},
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});

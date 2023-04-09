@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cruise</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+    {{> layouts/header }}
+    {{> banners/banner-oneimage }}
+    {{> cards/cardText }}
+    <section class="pb-16 px-4 bg-white" id="-2">
+        <div class="container mx-auto">
+            <div class="grid grid-rows-1 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+                {{> cards/cardFull }}
+                {{> cards/cardFull }}
+                {{> cards/cardFull }}
+                {{> cards/cardFull }}
+                {{> cards/cardFull }}
+                {{> cards/cardFull }}
+                {{> cards/cardFull }}
+                {{> cards/cardFull }}
+            </div>
+    </section>
+    <section class="py-16 px-4 bg-primary-section" id="-3">
+        <div class="container mx-auto">
+
+            <div class="swiper testimonialSwiper !p-4 !-m-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination !bottom-4"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+    <section class="py-16  bg-white" id="-4">
+        <div class="container mx-auto">
+            {{> accordion/question }}
+        </div>
+    </section>
+
+    {{> layouts/footer }}
+</body>
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>
