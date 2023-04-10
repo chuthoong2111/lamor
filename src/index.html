@@ -10,17 +10,7 @@
 </head>
 
 <body>
-    <ul class="people_list">
-        {{#each people}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-    {{#each [1,2,3,4,5]}}
-    <li>{{> cards/cardFull }}</li>
-    {{/each}}
-    {{#each (limit card/cardFul 5)}}
-  <li> {{@index}} - {{this}}</li>
-{{/each}}
+
     {{> layouts/header }}
     {{> banners/banner }}
     {{> cards/cardText }}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cruise</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+    {{> layouts/header }}
+    {{> banners/banner-oneimage }}
+    <section class="px-3 py-16" id="-1">
+        <div class="card-text flex flex-col gap-6 xl:w-6/12 text-center mx-auto items-center justify-center">
+            <h1 class="card-title text-3xl lg:text-5xl font-display first-letter:text-primary leading-tight uppercase">
+                new & event
+            </h1>
+            <div class="card-body text-xl font-light text-center">
+                In the same way the glaciers carved the mountains and lakes, awe and
+                inspiration will reshape you. Unleash your inner explorer and discover the
+                magic of our mountain haven.
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-16 px-4 bg-white" id="-7">
+        <div class="container lg:w-10/12 2xl:w-8/12 mx-auto">
+            <div class="grid gap-4 lg:grid-cols-3 lg:gap-16 items-center">
+                <div class="flex flex-col items-start gap-4 lg:gap-8 ">
+
+                    <div class="card-body flex flex-col gap-4 p-3">
+                        <h3 class="card-title text-xl font-display">
+                            <a class="border-s-2 border-primary pl-4" href="#">
+                                Premier Two Queen Guestroom
+                            </a>
+                        </h3>
+                        <div class="card-text line-clamp-5">
+                            Emotion cruise is designed based on the idea of contemporary,
+                            luxurious, quintessential style. She inherited the precious experience
+                            of her sister - Stellar of the Seas, to make us stand out and unique
+                            from the other one in Ha Long - Lan Ha Bay. With designed itineraries,
+                            the delicious and abundant menu, professional service, and
+                            well-trained staff, Emotion cruise promises to bring customers a truly
+                            memorable experience.
+                        </div>
+
+                    </div>
+                    <div class="card-body flex flex-col gap-4 p-3">
+                        <h3 class="card-title text-xl font-display"><a class="border-s-2 border-primary pl-4" href="#">
+                                Premier Two Queen Guestroom
+                            </a></h3>
+                        <div class="card-text line-clamp-5">
+                            Emotion cruise is designed based on the idea of contemporary,
+                            luxurious, quintessential style. She inherited the precious experience
+                            of her sister - Stellar of the Seas, to make us stand out and unique
+                            from the other one in Ha Long - Lan Ha Bay. With designed itineraries,
+                            the delicious and abundant menu, professional service, and
+                            well-trained staff, Emotion cruise promises to bring customers a truly
+                            memorable experience.
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="flex relative w-full h-auto px-6 lg:px-0 ">
+                    <img class="w-9/12 aspect-[3/4] object-cover -rotate-6 shadow h-auto "
+                        src="https://placehold.jp/600x800.png" loading="lazy" alt="#" />
+                    <img class="w-7/12 absolute -bottom-10 right-0 aspect-[3/4] object-cover rotate-6 shadow"
+                        src="https://placehold.jp/600x800.png" loading="lazy" alt="#" />
+                </div>
+                <div class="flex flex-col items-start gap-4 lg:gap-8 align-items-start mt-8 lg:mt-0">
+
+                    <div class="card-body flex flex-col gap-4 p-3">
+                        <h3 class="card-title text-xl font-display">
+                            <a class="border-s-2 border-primary pl-4" href="#">
+                                Premier Two Queen Guestroom
+                            </a>
+                        </h3>
+                        <div class="card-text line-clamp-5">
+                            Emotion cruise is designed based on the idea of contemporary,
+                            luxurious, quintessential style. She inherited the precious experience
+                            of her sister - Stellar of the Seas, to make us stand out and unique
+                            from the other one in Ha Long - Lan Ha Bay. With designed itineraries,
+                            the delicious and abundant menu, professional service, and
+                            well-trained staff, Emotion cruise promises to bring customers a truly
+                            memorable experience.
+                        </div>
+
+                    </div>
+                    <div class="card-body flex flex-col gap-4 p-3">
+                        <h3 class="card-title text-xl font-display">
+                            <a class="border-s-2 border-primary pl-4" href="#">
+                                Premier Two Queen Guestroom
+                            </a>
+                        </h3>
+                        <div class="card-text line-clamp-5">
+                            Emotion cruise is designed based on the idea of contemporary,
+                            luxurious, quintessential style. She inherited the precious experience
+                            of her sister - Stellar of the Seas, to make us stand out and unique
+                            from the other one in Ha Long - Lan Ha Bay. With designed itineraries,
+                            the delicious and abundant menu, professional service, and
+                            well-trained staff, Emotion cruise promises to bring customers a truly
+                            memorable experience.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container lg:w-10/12 2xl:w-8/12 mx-auto mt-20">
+            <div class="grid gap-4 lg:grid-cols-3 lg:gap-4 2xl:gap-12 items-center">
+                {{#each (range 1 6)}}
+                <div class="card-body flex flex-col gap-4 p-3">
+                    <h3 class="card-title text-xl font-display">
+                        <a class="border-s-2 border-primary pl-4" href="#">
+                            Premier Two Queen Guestroom
+                        </a>
+                    </h3>
+                    <div class="card-text line-clamp-5">
+                        <img class="mb-4 object-cover aspect-[3/2]" src="https://placehold.jp/600x400.png"
+                            loading="lazy" alt="600x400" />
+                        Emotion cruise is designed based on the idea of contemporary,
+                        luxurious, quintessential style. She inherited the precious experience
+                        of her sister - Stellar of the Seas, to make us stand out and unique
+                        from the other one in Ha Long - Lan Ha Bay. With designed itineraries,
+                        the delicious and abundant menu, professional service, and
+                        well-trained staff, Emotion cruise promises to bring customers a truly
+                        memorable experience.
+                    </div>
+
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    {{> layouts/footer }}
+</body>
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>

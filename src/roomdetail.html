@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cruise</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+    {{> layouts/header }}
+    {{> banners/banner-roomdetail }}
+
+    <div class="grid mx-auto lg:w-10/12 2xl:w-8/12 grid-rows-1 lg:grid-cols-3 py-12 px-6 gap-16">
+        <div class="flex flex-col gap-4">
+            <div class="lead w-full text-xl font-light">
+                For guests looking to elevate their experience, our Premier King Guestrooms overlook the town of
+                Jackson.
+                The ideal home
+                base for your adventures.
+
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="https://placehold.jp/24x24.png" loading="lazy" alt="24x24" />
+                <div class="line-clamp-1">
+                    01 queen-sized bed or 01 queen-sized bed & 1 single bed
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="https://placehold.jp/24x24.png" loading="lazy" alt="24x24" />
+                <div class="line-clamp-1">
+                    01 queen-sized bed or 01 queen-sized bed & 1 single bed
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="https://placehold.jp/24x24.png" loading="lazy" alt="24x24" />
+                <div class="line-clamp-1">
+                    01 queen-sized bed or 01 queen-sized bed & 1 single bed
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <h2 class="text-2xl text-primary-dark font-display mb-6 font-semibold">
+                Features
+            </h2>
+            <ul class="marker:text-primary list-disc list-inside">
+                <li class="mb-4">1</li>
+                <li class="mb-4">2</li>
+                <li class="mb-4">3</li>
+                <li class="mb-4">4</li>
+                <li class="mb-4">5</li>
+            </ul>
+
+        </div>
+        <div class="w-full">
+            <h2 class="text-2xl text-primary-dark font-display mb-6 font-semibold">
+                Amenities
+            </h2>
+            <ul class="marker:text-primary list-disc list-inside">
+                <li class="mb-4">1</li>
+                <li class="mb-4">2</li>
+                <li class="mb-4">3</li>
+                <li class="mb-4">4</li>
+                <li class="mb-4">5</li>
+            </ul>
+
+        </div>
+    </div>
+    <section class="pb-16 px-4 bg-white" id="-2">
+        <h2 class="card-title text-2xl  font-display font-bold leading-tight flex items-center justify-center mb-4">
+            Gallery
+        </h2>
+        <div class="container lg:w-10/12 2xl:w-8/12 mx-auto">
+            <div class="grid grid-rows-1 lg:grid-cols-5  gap-1">
+                {{#each (range 1 12)}}
+                {{> cards/cardGallery }}
+                {{/each}}
+            </div>
+
+
+    </section>
+    <section class="py-16 px-4 bg-primary-section" id="-3">
+        <div class="container mx-auto">
+
+            <div class="swiper testimonialSwiper !p-4 !-m-4">
+                <div class="swiper-wrapper">
+                    {{#each (range 1 6)}}
+                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    {{/each}}
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+    <section class="py-16 px-4" id="-3">
+        <div class="container mx-auto">
+            <div class="swiper tourSwiper !p-4 !-m-4">
+                <h2 class="text-2xl text-primary-dark font-display mb-6 font-semibold text-center">
+                    Another Room
+                </h2>
+                <div class="swiper-wrapper">
+                    {{#each (range 1 6)}}
+                    <div class="swiper-slide"> {{> cards/cardFull }}</div>
+                    {{/each}}
+
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination !bottom-4"></div> -->
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    {{> layouts/footer }}
+</body>
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>
