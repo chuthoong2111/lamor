@@ -18,6 +18,10 @@ export default defineConfig({
 	plugins: [
 		handlebars({
 			helpers: {
+				json: (context) => {
+					return JSON.stringify(context);
+				},
+				data: "*.json",
 				webRoot: function () {
 					return "{{webRoot}}";
 				},
@@ -38,6 +42,14 @@ export default defineConfig({
 						return [];
 					}
 					return arr.slice(0, limit);
+				},
+				each_upto: function (ary, max, options) {
+					if (!ary || ary.length == 0) return options.inverse(this);
+
+					var result = [];
+					for (var i = 0; i < max && i < ary.length; ++i)
+						result.push(options.fn(ary[i]));
+					return result.join("");
 				},
 			},
 			onBeforeSave: function (_Handlebars, res, file) {
@@ -70,8 +82,9 @@ export default defineConfig({
 			input: {
 				index: resolve(__dirname, "src", "index.html"),
 				roomlist: resolve(__dirname, "src", "roomlist.html"),
-				detail: resolve(__dirname, "src", "detail.html"),
-				// service: resolve(__dirname, "src", "service.html"),
+				tourlist: resolve(__dirname, "src", "tourlist.html"),
+				tourdetail: resolve(__dirname, "src", "tourdetail.html"),
+				about: resolve(__dirname, "src", "about.html"),
 				contact: resolve(__dirname, "src", "contact.html"),
 				booking: resolve(__dirname, "src", "booking.html"),
 			},

@@ -4,3 +4,4 @@ import "../scss/main.scss";
 import "remixicon/fonts/remixicon.css";
 import "./swiper";
 import "./nav";
+import "./gsap";

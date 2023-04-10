@@ -1,6 +1,12 @@
 {
+  
   "pagetitleIndex": "Dr Vương",
   "main": {
+    "people": [
+      "Yehuda Katz",
+      "Alan Johnson",
+      "Charles Jolley"
+    ],
     "dichvu-slide": [
       {
         "img": "img-dang",

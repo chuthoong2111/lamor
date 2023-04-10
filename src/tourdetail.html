@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cruise</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+    {{> layouts/header }}
+    {{> banners/banner-oneimage }}
+    <section class="px-3 py-16" id="-1">
+        <div class="card-text flex flex-col gap-6 xl:w-6/12 text-center mx-auto items-center justify-center">
+            <h1 class="card-title text-3xl lg:text-5xl font-display first-letter:text-primary leading-tight">Experience
+                L’amour cruise, and Tomorrows are Forever Changed</h1>
+            <div class="card-body text-xl font-light text-center">
+                In the same way the glaciers carved the mountains and lakes, awe and
+                inspiration will reshape you. Unleash your inner explorer and discover the
+                magic of our mountain haven.
+            </div>
+            <button>Readmore</button>
+        </div>
+    </section>
+    <section class="pb-16 px-4 bg-white" id="-2">
+        <div class="container lg:w-8/12 mx-auto">
+            <div class="grid grid-rows-1 gap-y-16 thumblayout">
+                {{> cards/cardThumbLeft }}
+                {{> cards/cardThumbLeft }}
+                {{> cards/cardThumbLeft }}
+                {{> cards/cardThumbLeft }}
+                {{> cards/cardThumbLeft }}
+                {{> cards/cardThumbLeft }}
+                {{> cards/cardThumbLeft }}
+                {{> cards/cardThumbLeft }}
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-y-16 mt-16">
+                <div class="w-full">
+                    <h2 class="text-2xl text-primary-dark font-display mb-6 font-semibold">
+                        Include
+                    </h2>
+                    <ul class="list-disc list-inside">
+                        <li class="mb-4">1</li>
+                        <li class="mb-4">2</li>
+                        <li class="mb-4">3</li>
+                        <li class="mb-4">4</li>
+                        <li class="mb-4">5</li>
+                    </ul>
+                </div>
+                <div class="w-full">
+                    <h2 class="text-2xl text-primary-dark font-display mb-6 font-semibold">
+                        Exclude
+                    </h2>
+                    <ul class="list-disc list-inside">
+                        <li class="mb-4">1</li>
+                        <li class="mb-4">2</li>
+                        <li class="mb-4">3</li>
+                        <li class="mb-4">4</li>
+                        <li class="mb-4">5</li>
+                    </ul>
+                </div>
+                <div class="col-span-3 lg:col-auto w-full text-center"><button>Readmore</button></div>
+            </div>
+
+    </section>
+    <section class="py-16 px-4 bg-primary-section" id="-3">
+        <div class="container mx-auto">
+            <div class="swiper tourSwiper !p-4 !-m-4">
+                <h2 class="text-2xl text-primary-dark font-display mb-6 font-semibold text-center">
+                    Another Tours
+                </h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                    <div class="swiper-slide"> {{> cards/cardNoicon }}</div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination !bottom-4"></div> -->
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    {{> layouts/footer }}
+</body>
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>
