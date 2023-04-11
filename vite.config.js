@@ -4,7 +4,6 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 import handlebars from "vite-plugin-handlebars";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import handlebarsHelpers from "handlebars-helpers";
 export default defineConfig({
 	root: path.resolve(__dirname, "src"),
 
@@ -60,6 +59,7 @@ export default defineConfig({
 				newslist: resolve(__dirname, "src", "newslist.html"),
 				tourdetail: resolve(__dirname, "src", "tourdetail.html"),
 				roomdetail: resolve(__dirname, "src", "roomdetail.html"),
+				gallery: resolve(__dirname, "src", "gallery.html"),
 				about: resolve(__dirname, "src", "about.html"),
 				contact: resolve(__dirname, "src", "contact.html"),
 				booking: resolve(__dirname, "src", "booking.html"),

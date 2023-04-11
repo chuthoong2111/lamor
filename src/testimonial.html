@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cruise</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+    {{> layouts/header }}
+    {{> banners/banner-oneimage }}
+
+
+    <section class="py-16 px-4  text-center bg-white" id="-2">
+        <h1 class="card-title text-3xl lg:text-5xl font-display first-letter:text-primary leading-tight mb-6">
+            Testnimonial
+        </h1>
+        <div class="grid mx-auto lg:w-10/12 2xl:w-8/12 grid-rows-1 lg:grid-cols-3 all-testimonial">
+            {{#each (range 1 12)}}
+            <div class="item-testimonial bg-white border border-gray-100 p-8">
+                <div class="card-body flex flex-col gap-3 p-3 text-center">
+                    <h3 class="card-title text-xl font-display">WHAT PEOPLE ARE SAYING</h3>
+                    <div class="card-text italic relative">
+                        <svg class="absolute left-0 lg:-left-8 top-0" width="91" height="77" viewBox="0 0 91 77"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.1"
+                                d="M14.72 34.56C14.72 38.6133 17.1733 41.28 22.08 42.56C32.32 44.9067 37.44 50.6667 37.44 59.84C37.44 64.7467 35.7333 68.8 32.32 72C29.12 75.2 24.8533 76.8 19.52 76.8C14.4 76.8 9.81333 74.6667 5.76 70.4C1.92 65.92 0 59.2 0 50.24C0 41.0667 2.56 32 7.68 23.04C13.0133 14.08 20.5867 6.39999 30.4 0L35.2 6.08C21.5467 15.04 14.72 24.5333 14.72 34.56ZM67.84 34.56C67.84 38.6133 70.2933 41.28 75.2 42.56C85.44 44.9067 90.56 50.6667 90.56 59.84C90.56 64.7467 88.8533 68.8 85.44 72C82.24 75.2 77.9733 76.8 72.64 76.8C67.52 76.8 62.9333 74.6667 58.88 70.4C55.04 65.92 53.12 59.2 53.12 50.24C53.12 41.0667 55.68 32 60.8 23.04C66.1333 14.08 73.7067 6.39999 83.52 0L88.32 6.08C74.6667 15.04 67.84 24.5333 67.84 34.56Z"
+                                fill="#44342B"></path>
+                        </svg>
+
+                        <div class="relative z-10">
+                            Emotion cruise is designed based on the idea of contemporary, luxurious,
+                            quintessential style. She inherited the precious experience of her
+                            sister - Stellar of the Seas, to make us stand out and unique from the
+                            other one in Ha Long - Lan Ha Bay. With designed itineraries, the
+                            delicious and abundant menu, professional service, and well-trained
+                            staff, Emotion cruise promises to bring customers a truly memorable
+                            experience.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-footer flex items-center gap-4 justify-center text-center pb-6">
+                    <img class="object-cover aspect-square rounded-full w-16 border border-primary"
+                        src="https://placehold.jp/600x400.png" loading="lazy" alt="600x400" />
+                    <span class="font-semibold text-primary-dark">Do Ngoc Long</span>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+    </section>
+
+    {{> layouts/footer }}
+</body>
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>

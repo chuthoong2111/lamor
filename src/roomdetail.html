@@ -73,11 +73,12 @@
             Gallery
         </h2>
         <div class="container lg:w-10/12 2xl:w-8/12 mx-auto">
-            <div class="grid grid-rows-1 lg:grid-cols-5  gap-1">
+            <div class="grid grid-rows-1 lg:grid-cols-5  gap-1 all-gallery">
                 {{#each (range 1 12)}}
-                {{> cards/cardGallery }}
+                <a href="https://placehold.jp/1200x800.png" data-fancybox="gallery">{{> cards/cardGallery }}</a>
                 {{/each}}
             </div>
+        </div>
 
 
     </section>

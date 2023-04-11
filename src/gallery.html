@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cruise</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+    {{> layouts/header }}
+    {{> banners/banner-oneimage }}
+
+
+    <section class="py-16 px-4 bg-white" id="-2">
+        <h2 class="card-title text-2xl  font-display font-bold leading-tight flex items-center justify-center mb-4">
+            Gallery
+        </h2>
+        <div class="container lg:w-10/12 2xl:w-8/12 mx-auto">
+            <div class="grid grid-rows-1 lg:grid-cols-5  gap-1 all-gallery">
+                {{#each (range 1 12)}}
+                <a href="https://placehold.jp/1200x800.png" data-fancybox="gallery">{{> cards/cardGallery }}</a>
+                {{/each}}
+            </div>
+        </div>
+
+
+    </section>
+    <section class="py-16 px-4 bg-white" id="-2">
+        <h2 class="card-title text-2xl  font-display font-bold leading-tight flex items-center justify-center mb-4">
+            Gallery
+        </h2>
+        <div class="container lg:w-10/12 2xl:w-8/12 mx-auto">
+            <div class="grid grid-rows-1 lg:grid-cols-5  gap-1 all-gallery">
+                {{#each (range 1 12)}}
+                <a href="https://placehold.jp/1200x800.png" data-fancybox="gallery1">{{> cards/cardGallery }}</a>
+                {{/each}}
+            </div>
+        </div>
+
+
+    </section>
+    <section class="pb-16 px-4 bg-white" id="-2">
+        <h2 class="card-title text-2xl  font-display font-bold leading-tight flex items-center justify-center mb-4">
+            Gallery
+        </h2>
+        <div class="container lg:w-10/12 2xl:w-8/12 mx-auto">
+            <div class="grid grid-rows-1 lg:grid-cols-5  gap-1 all-gallery">
+                {{#each (range 1 12)}}
+                <a href="https://placehold.jp/1200x800.png" data-fancybox="gallery2">{{> cards/cardGallery }}</a>
+                {{/each}}
+            </div>
+        </div>
+
+
+    </section>
+    {{> layouts/footer }}
+</body>
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>
