@@ -1,12 +1,21 @@
 @import "tailwindcss/base";
+
+@layer base {
+    h1 {
+        @apply text-5xl;
+    }
+
+    h2 {
+        @apply text-4xl;
+    }
+
+    h3 {
+        @apply text-2xl;
+    }
+}
+
+
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-// @layer base {
-//     html {
-//         font-family: 'Work Sans', system-ui, sans-serif;
-//         font-size: .96rem;
-//     }
-// }
