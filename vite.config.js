@@ -4,6 +4,8 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 import handlebars from "vite-plugin-handlebars";
 import { viteStaticCopy } from "vite-plugin-static-copy";
+// import helpers from "handlebars-helpers";
+// import * as data from "./src/data.json";
 export default defineConfig({
 	root: path.resolve(__dirname, "src"),
 
@@ -24,12 +26,21 @@ export default defineConfig({
 					}
 					return result;
 				},
+				ifEqual: function (a, b, options) {
+					if (a === b) {
+						return options.fn(this);
+					} else {
+						return options.inverse(this);
+					}
+				},
 			},
 			onBeforeSave: function (_Handlebars, res, file) {
 				const elem = file.split("//").pop().split("/").length;
 				return res.split("{{webRoot}}").join(".".repeat(elem));
 			},
+			// add data
 			context: content,
+			// add partial
 			partialDirectory: resolve(__dirname, "src", "partials"),
 			compileOptions: {
 				preventIndent: true,
