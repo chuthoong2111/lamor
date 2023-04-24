@@ -11,9 +11,9 @@
 
 <body>
     {{> layouts/header }}
-    {{> banners/banner-oneimage }}
-    <main class="mx-7 lg:mx-6 mt-32 flex-grow">
-        <article class="max-w-5xl mx-auto">
+    {{! > banners/banner-oneimage }}
+    <main class="mx-7 lg:mx-6 flex-grow ">
+        <article class="max-w-5xl mx-auto prose  my-10 lg:my-40 ">
             <header class="mb-14">
                 <h1 class="text-3xl text-center font-bold leading-normal text-slate-900 mt-0 mb-3">Typography</h1>
                 <div class="text-center">Published on 21 June 2020 08:04 AM</div>
@@ -89,7 +89,8 @@
                     cumque
                     nihilse impedit quo minus id quod amets untra dolor amet sad. While this is
                     <code>code block()</code>
-                    and following is a <code>pre</code> tag</p>
+                    and following is a <code>pre</code> tag
+                </p>
                 <p>print 'this is pre tag'</p>
                 <p>Following is the syntax highlighted code block</p>
                 <pre><code class="language-go">func getCookie(name string, r interface{}) (*http.Cookie, error) {
@@ -170,7 +171,39 @@
                 </table>
             </div>
         </article>
+
+
     </main>
+    <section class="py-16 px-4 bg-primary-section" id="-7">
+        <div class="container lg:w-10/12 2xl:w-8/12 mx-auto">
+            <h3 class="card-title text-3xl text-center font-display">
+                Another Active </h3>
+            <hr class="m-4">
+            <div class="grid gap-4 lg:grid-cols-3 lg:gap-4 2xl:gap-12 items-center">
+                {{#each (range 1 6)}}
+                <div class="card-body flex flex-col gap-4 p-3">
+                    <h3 class="card-title text-xl font-display">
+                        <a class="border-s-2 border-primary pl-4" href="#">
+                            Premier Two Queen Guestroom
+                        </a>
+                    </h3>
+                    <div class="card-text line-clamp-5">
+                        <img class="mb-4 object-cover aspect-[3/2]" src="https://placehold.jp/600x400.png"
+                            loading="lazy" alt="600x400" />
+                        Emotion cruise is designed based on the idea of contemporary,
+                        luxurious, quintessential style. She inherited the precious experience
+                        of her sister - Stellar of the Seas, to make us stand out and unique
+                        from the other one in Ha Long - Lan Ha Bay. With designed itineraries,
+                        the delicious and abundant menu, professional service, and
+                        well-trained staff, Emotion cruise promises to bring customers a truly
+                        memorable experience.
+                    </div>
+
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
     {{> layouts/footer }}
 </body>
 <script type="module" src="./assets/js/main.js"></script>

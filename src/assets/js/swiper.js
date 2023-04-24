@@ -1,23 +1,17 @@
 // core version + navigation, pagination modules:
-import Swiper, {
-	Navigation,
-	Pagination,
-	// Grid
-} from "swiper";
+import Swiper, { Navigation, Pagination } from "swiper";
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import "swiper/css/grid";
-
 const swiper = new Swiper(".banner", {
 	modules: [Navigation, Pagination],
 	slidesPerView: 1,
 	spaceBetween: 20,
-	slidesPerGroup: 1,
-
 	pagination: {
 		el: ".swiper-pagination",
+		dynamicBullets: true,
 	},
 	// Navigation arrows
 	navigation: {
@@ -25,6 +19,7 @@ const swiper = new Swiper(".banner", {
 		prevEl: ".swiper-button-prev",
 	},
 });
+
 const swiper2 = new Swiper(".roomSwiper", {
 	modules: [Navigation, Pagination],
 	slidesPerView: 1,
@@ -95,10 +90,9 @@ const swiper4 = new Swiper(".testimonialSwiper", {
 	modules: [Navigation, Pagination],
 	slidesPerView: 1,
 	spaceBetween: 20,
-	slidesPerGroup: 1,
-
 	pagination: {
 		el: ".swiper-pagination",
+		dynamicBullets: true,
 	},
 	// Navigation arrows
 	navigation: {

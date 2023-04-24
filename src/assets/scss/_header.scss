@@ -12,6 +12,7 @@
 }
 
 .hamburger__top-bun,
+.hamburger__midle-bun,
 .hamburger__bottom-bun {
     content: '';
     position: absolute;
@@ -27,11 +28,15 @@
 }
 
 .hamburger__top-bun {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+}
+
+.hamburger__midle-bun {
+    transform: translateY(0px);
 }
 
 .hamburger__bottom-bun {
-    transform: translateY(3px);
+    transform: translateY(6px);
 }
 
 .open {
@@ -42,6 +47,10 @@
 .open .hamburger__top-bun {
     transform:
         rotate(45deg) translateY(0px);
+}
+
+.open .hamburger__midle-bun {
+    opacity: 0;
 }
 
 .open .hamburger__bottom-bun {
