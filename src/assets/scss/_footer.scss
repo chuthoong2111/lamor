@@ -1,0 +1,152 @@
+.square-m {
+    width: 166px;
+    height: 166px;
+}
+
+.square-s {
+    width: 122px;
+    height: 122px;
+}
+
+.rect-xl {
+    width: 280px;
+    height: 180px;
+}
+
+.rect-l {
+    width: 235px;
+    height: 160px;
+}
+
+.rect-m {
+    width: 192px;
+    height: 130px;
+}
+
+.rect-s {
+    width: 136px;
+    height: 92px;
+}
+
+// 
+.jumping {
+    margin-top: 200px;
+}
+
+.city {
+    margin-top: 356px;
+    margin-left: -80px;
+}
+
+.market {
+    margin-top: 109px;
+}
+
+.camels {
+    margin-top: 270px;
+    margin-left: -160px;
+}
+
+.mountain {
+    background: url(/images/marquee/mountain.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 156px;
+    margin-left: 30px;
+}
+
+.wall {
+    background: url(/images/marquee/wall.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 365px;
+    margin-left: -280px;
+}
+
+.trees {
+    background: url(/images/marquee/trees.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 119px;
+    margin-left: 174px;
+}
+
+.jumping-2 {
+    background: url(/images/marquee/jumping-2.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 355px;
+    margin-left: -50px;
+}
+
+.group {
+    background: url(/images/marquee/group.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 75px;
+    margin-left: -100px;
+}
+
+.group-2 {
+    background: url(/images/marquee/group-2.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 195px;
+    margin-left: -56px;
+}
+
+.bench {
+    background: url(/images/marquee/bench.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 300px;
+}
+
+.festival {
+    background: url(/images/marquee/festival.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 100px;
+    margin-left: -30px;
+}
+
+.group-3 {
+    background: url(/images/marquee/group-3.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 365px;
+    margin-left: -174px;
+}
+
+.landscape {
+    background: url(/images/marquee/landscape.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-left: -67px;
+}
+
+.pool {
+    background: url(/images/marquee/pool.jpg) no-repeat 50%;
+    background-size: cover;
+    margin-top: 162px;
+    margin-left: -100px;
+}
+
+// ////
+.Marquee {
+    width: 100vw;
+    height: 546px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 100px 0;
+}
+
+.Marquee-content,
+.Marquee-content-2 {
+    display: flex;
+    -webkit-animation: marquee 150s linear infinite running;
+    animation: marquee 150s linear infinite running;
+}
+
+.Marquee-content-2 {
+    transition: opacity .5s ease-out;
+    margin-left: 30px;
+}
+
+.Marquee-tag {
+    border-radius: 6px;
+    box-shadow: 2px 5px 10px 0 rgba(69, 50, 42, .1);
+    display: inline-flex;
+    transition: all .2s ease;
+}
