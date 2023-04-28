@@ -14,16 +14,11 @@
     {{> banners/banner-oneimage }}
     {{> cards/cardText }}
     <section class="pb-16 px-4 bg-white" id="-2">
-        <div class="container mx-auto">
-            <div class="grid grid-rows-1 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
-                {{> cards/cardFull }}
-                {{> cards/cardFull }}
-                {{> cards/cardFull }}
-                {{> cards/cardFull }}
-                {{> cards/cardFull }}
-                {{> cards/cardFull }}
-                {{> cards/cardFull }}
-                {{> cards/cardFull }}
+        <div class="container w-full lg:w-10/12 2xl:w-8/12 mx-auto">
+            <div class="grid grid-rows-1 lg:grid-cols-1 2xl:grid-cols-1 gap-y-8 lg:gap-y-16 thumblayout">
+                {{#each (range 1 6)}}
+                {{> cards/cardHotelList }}
+                {{/each}}
             </div>
     </section>
     <section class="py-16 px-4 bg-primary-section" id="-3">
@@ -31,15 +26,10 @@
 
             <div class="swiper testimonialSwiper !p-4 !-m-4">
                 <div class="swiper-wrapper">
+                    {{#each (range 1 6)}}
                     <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
-                    <div class="swiper-slide"> {{> cards/cardTestimonial }}</div>
+                    {{/each}}
+
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>

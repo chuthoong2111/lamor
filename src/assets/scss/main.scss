@@ -3,6 +3,7 @@
 @import 'card';
 @import 'accordion';
 @import 'header';
+@import 'footer';
 @import 'breadcrumbs';
 
 :root {
@@ -63,6 +64,26 @@ h6 {
 
                 .content {
                     @apply order-1
+                }
+            }
+
+            &.item-hotel {
+                align-items: center;
+
+                .text {
+                    height: auto;
+                    @apply bg-primary-light;
+                    margin-left: -4rem;
+                    margin-right: -0;
+                }
+
+                &:nth-child(2n) {
+                    .text {
+                        height: auto;
+                        @apply bg-primary-light;
+                        margin-right: -4rem;
+                        margin-left: -0;
+                    }
                 }
             }
         }
