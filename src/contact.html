@@ -10,14 +10,103 @@
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <p class="text-sm ...">The quick brown fox ...</p>
-    <p class="text-base ...">The quick brown fox ...</p>
-    <p class="text-lg ...">The quick brown fox ...</p>
-    <p class="text-xl ...">The quick brown fox ...</p>
-    <p class="text-2xl ...">The quick brown fox ...</p>
+    {{> layouts/header }}
+    {{> banners/banner-oneimage }}
+    <section class="px-3 py-16" id="-1">
+        <div class="card-text flex flex-col gap-6 xl:w-6/12 text-center mx-auto items-center justify-center">
+            <h1 class="card-title text-3xl lg:text-5xl font-display first-letter:text-primary leading-tight">Experience
+                CRUISE PACKAGE REQUEST</h1>
+            <div class="card-body text-xl font-light text-center text-red-500">
+                (all marked * fields are compulsory)
+            </div>
+            <div class="text-center">
+                Cruise name: <span class="text-2xl">Ha Long Bay | 1 night | Itinerary</span>
+            </div>
+        </div>
+
+    <div class="px-3 py-5 xl:w-6/12 mx-auto"> 
+        {{> form/input-text }}
+        {{> form/input-date }}
+        {{> form/input-number }}
+        <input type="email" class="form-input px-4 py-3 rounded-full">
+        <select class="form-select px-4 py-3 rounded-full"></select>
+            <label class="block">
+              <span class="text-gray-700">Email address</span>
+              <input type="email" class="
+                  mt-1
+                  block
+                  w-full
+                  rounded-md
+                  border-gray-300
+                  shadow-sm
+                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                " placeholder="john@example.com">
+            </label>
+            <label class="block">
+              <span class="text-gray-700">When is your event?</span>
+              <input type="date" class="
+                  mt-1
+                  block
+                  w-full
+                  rounded-md
+                  border-gray-300
+                  shadow-sm
+                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                ">
+            </label>
+            <label class="block">
+              <span class="text-gray-700">What type of event is it?</span>
+              <select class="
+                  block
+                  w-full
+                  mt-1
+                  rounded-md
+                  border-gray-300
+                  shadow-sm
+                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                ">
+                <option>Corporate event</option>
+                <option>Wedding</option>
+                <option>Birthday</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-gray-700">Additional details</span>
+              <textarea class="
+                  mt-1
+                  block
+                  w-full
+                  rounded-md
+                  border-gray-300
+                  shadow-sm
+                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+                " rows="3"></textarea>
+            </label>
+            <div class="block">
+              <div class="mt-2">
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" class="
+                        rounded
+                        border-gray-300
+                        text-indigo-600
+                        shadow-sm
+                        focus:border-indigo-300
+                        focus:ring
+                        focus:ring-offset-0
+                        focus:ring-indigo-200
+                        focus:ring-opacity-50
+                      " checked="">
+                    <span class="ml-2">Email me news and special offers</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    </div>
+</section>
 </body>
 <script type="module" src="./assets/js/main.js"></script>
 
