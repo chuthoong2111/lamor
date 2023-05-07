@@ -1,0 +1,85 @@
+<div class="flex lg:flex-row flex-col item item-hotel">
+	<div class="img aspect-3/2 w-full xl:w-7/12">
+		<img
+			src="https://placehold.jp/900x600.png"
+			class="w-full object-cover"
+			loading="lazy"
+		/>
+	</div>
+	<div class="content w-full xl:w-7/12 p-6 xl:p-10 relative text">
+		<h2 class="text-2xl font-semibold text-primary-dark font-display mb-6">Title
+			content</h2>
+		<div class="line-clamp-3">Lorem ipsum dolor, sit amet consectetur
+			adipisicing elit. Porro cum non aliquid, sapiente architecto aut illo
+			itaque? Quod pariatur harum expedita? Accusamus non nobis neque sequi modi
+			recusandae dolor ducimus!
+		</div>
+
+		<div class="grid grid-cols-2 gap-4 mt-4">
+			{{#each (range 1 4)}}
+				<div class="flex items-start gap-3 w-full">
+					<img
+						class="mt-1"
+						src="https://placehold.jp/24x24.png"
+						loading="lazy"
+						alt="24x24"
+					/>
+					<div class="line-clamp-2">
+						01 queen-sized bed or 01 queen-sized bed & 1 single bed
+					</div>
+				</div>
+			{{/each}}
+		</div>
+
+		<div class="card-footer flex items-center justify-center text-center mt-4">
+			<a class="btn-dark flex flex-row relative group" role="button">
+				<svg
+					width="6"
+					height="40"
+					viewBox="0 0 6 40"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M0.5 0.5H5.5V14.8992L3 16.415L0.5 14.8992V0.5Z"
+						stroke="#544C4C"
+					></path>
+					<path
+						d="M3 17.7071L5.29312 20.0002L3 22.2933L0.70688 20.0002L3 17.7071Z"
+						stroke="#544C4C"
+					></path>
+					<path
+						d="M5.5 39.5L0.5 39.5L0.500001 25.1008L3 23.585L5.5 25.1008L5.5 39.5Z"
+						stroke="#544C4C"
+					></path>
+				</svg>
+
+				<div
+					class="group-hover:bg-primary-dark group-hover:text-white flex justify-center items-center px-6 border-t border-b border-primary-dark h-10"
+				>
+					Click me
+				</div>
+				<svg
+					width=" 6"
+					height="40"
+					viewBox="0 0 6 40"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M0.5 0.5H5.5V14.8992L3 16.415L0.5 14.8992V0.5Z"
+						stroke="#544C4C"
+					></path>
+					<path
+						d="M3 17.7071L5.29312 20.0002L3 22.2933L0.70688 20.0002L3 17.7071Z"
+						stroke="#544C4C"
+					></path>
+					<path
+						d="M5.5 39.5L0.5 39.5L0.500001 25.1008L3 23.585L5.5 25.1008L5.5 39.5Z"
+						stroke="#544C4C"
+					></path>
+				</svg>
+			</a>
+		</div>
+	</div>
+</div>

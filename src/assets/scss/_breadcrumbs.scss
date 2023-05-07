@@ -1,0 +1,12 @@
+.breadcrumbs {
+    overflow: hidden;
+
+    ul {
+        @apply relative z-20;
+    }
+
+    &::before {
+        content: "";
+        @apply blur-md bg-white/20 w-full h-full left-0 top-0 absolute z-10;
+    }
+}

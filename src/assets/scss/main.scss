@@ -3,7 +3,12 @@
 @import 'card';
 @import 'accordion';
 @import 'header';
+<<<<<<< HEAD
 @import 'form';
+=======
+@import 'footer';
+@import 'breadcrumbs';
+>>>>>>> 2efba535d72da49cad3cb42f9e63fcff7d3c791d
 
 :root {
     --swiper-navigation-color: theme('colors.primary.DEFAULT') !important;
@@ -65,6 +70,26 @@ h6 {
                     @apply order-1
                 }
             }
+
+            &.item-hotel {
+                align-items: center;
+
+                .text {
+                    height: auto;
+                    @apply bg-primary-light;
+                    margin-left: -4rem;
+                    margin-right: -0;
+                }
+
+                &:nth-child(2n) {
+                    .text {
+                        height: auto;
+                        @apply bg-primary-light;
+                        margin-right: -4rem;
+                        margin-left: -0;
+                    }
+                }
+            }
         }
     }
 }
@@ -73,4 +98,30 @@ h6 {
     .item-testimonial:nth-child(2n) {
         @apply bg-primary-light;
     }
+}
+
+.line-clamp-2 {
+
+    @apply h-12 leading-6;
+
+}
+
+.line-clamp-3 {
+
+    @apply leading-6;
+    height: 72px;
+
+}
+
+.line-clamp-4 {
+
+    @apply h-24 leading-6;
+
+}
+
+.line-clamp-5 {
+
+    @apply leading-6;
+    height: 120px;
+
 }

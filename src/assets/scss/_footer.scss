@@ -1,0 +1,129 @@
+.square-m {
+    width: 166px;
+    height: 166px;
+}
+
+.square-s {
+    width: 122px;
+    height: 122px;
+}
+
+.rect-xl {
+    width: 280px;
+    height: 186px;
+}
+
+.rect-l {
+    width: 235px;
+    height: 156px;
+}
+
+.rect-m {
+    width: 192px;
+    height: 128px;
+}
+
+.rect-s {
+    width: 136px;
+    height: 90px;
+}
+
+// 
+.jumping {
+    margin-top: 200px;
+}
+
+.city {
+    margin-top: 356px;
+    margin-left: -80px;
+}
+
+.market {
+    margin-top: 109px;
+}
+
+.camels {
+    margin-top: 270px;
+    margin-left: -160px;
+}
+
+.mountain {
+    margin-top: 156px;
+    margin-left: 30px;
+}
+
+.wall {
+    margin-top: 365px;
+    margin-left: -280px;
+}
+
+.trees {
+    margin-top: 119px;
+    margin-left: 174px;
+}
+
+.jumping-2 {
+    margin-top: 355px;
+    margin-left: -50px;
+}
+
+.group-1 {
+    margin-top: 75px;
+    margin-left: -100px;
+}
+
+.group-2 {
+    margin-top: 195px;
+    margin-left: -56px;
+}
+
+.bench {
+    margin-top: 300px;
+}
+
+.festival {
+    margin-top: 100px;
+    margin-left: -30px;
+}
+
+.group-3 {
+    margin-top: 365px;
+    margin-left: -174px;
+}
+
+.landscape {
+    margin-left: -67px;
+}
+
+.pool {
+    margin-top: 162px;
+    margin-left: -100px;
+}
+
+// ////
+.Marquee {
+    width: 100%;
+    height: 546px;
+    align-items: center;
+    overflow: hidden;
+    margin: 80px 0;
+}
+
+.Marquee-content,
+.Marquee-content-2 {
+    display: flex;
+    -webkit-animation: marquee 150s linear infinite running;
+    animation: marquee 150s linear infinite running;
+}
+
+.Marquee-content-2 {
+    transition: opacity .5s ease-out;
+    margin-left: 30px;
+}
+
+.Marquee-tag {
+    overflow: hidden;
+    box-shadow: 2px 5px 10px 0 rgba(69, 50, 42, .1);
+    display: inline-flex;
+    transition: all .2s ease;
+}

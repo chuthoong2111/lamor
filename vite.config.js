@@ -70,6 +70,7 @@ export default defineConfig({
 				newslist: resolve(__dirname, "src", "newslist.html"),
 				tourdetail: resolve(__dirname, "src", "tourdetail.html"),
 				roomdetail: resolve(__dirname, "src", "roomdetail.html"),
+				detail: resolve(__dirname, "src", "detail.html"),
 				gallery: resolve(__dirname, "src", "gallery.html"),
 				about: resolve(__dirname, "src", "about.html"),
 				contact: resolve(__dirname, "src", "contact.html"),
