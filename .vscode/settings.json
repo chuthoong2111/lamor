@@ -8,5 +8,6 @@
         "roomlist",
         "swiper",
         "tailwindcss"
-    ]
+    ],
+    "files.trimTrailingWhitespace": true
 }

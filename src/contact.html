@@ -2,111 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cruise</title>
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cruise</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
 
 </head>
 
 <body>
-    {{> layouts/header }}
-    {{> banners/banner-oneimage }}
-    <section class="px-3 py-16" id="-1">
-        <div class="card-text flex flex-col gap-6 xl:w-6/12 text-center mx-auto items-center justify-center">
-            <h1 class="card-title text-3xl lg:text-5xl font-display first-letter:text-primary leading-tight">Experience
-                CRUISE PACKAGE REQUEST</h1>
-            <div class="card-body text-xl font-light text-center text-red-500">
-                (all marked * fields are compulsory)
-            </div>
-            <div class="text-center">
-                Cruise name: <span class="text-2xl">Ha Long Bay | 1 night | Itinerary</span>
-            </div>
-        </div>
-
-    <div class="px-3 py-5 xl:w-6/12 mx-auto"> 
-        {{> form/input-text }}
-        {{> form/input-date }}
-        {{> form/input-number }}
-        <input type="email" class="form-input px-4 py-3 rounded-full">
-        <select class="form-select px-4 py-3 rounded-full"></select>
-            <label class="block">
-              <span class="text-gray-700">Email address</span>
-              <input type="email" class="
-                  mt-1
-                  block
-                  w-full
-                  rounded-md
-                  border-gray-300
-                  shadow-sm
-                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                " placeholder="john@example.com">
-            </label>
-            <label class="block">
-              <span class="text-gray-700">When is your event?</span>
-              <input type="date" class="
-                  mt-1
-                  block
-                  w-full
-                  rounded-md
-                  border-gray-300
-                  shadow-sm
-                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                ">
-            </label>
-            <label class="block">
-              <span class="text-gray-700">What type of event is it?</span>
-              <select class="
-                  block
-                  w-full
-                  mt-1
-                  rounded-md
-                  border-gray-300
-                  shadow-sm
-                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                ">
-                <option>Corporate event</option>
-                <option>Wedding</option>
-                <option>Birthday</option>
-                <option>Other</option>
-              </select>
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Additional details</span>
-              <textarea class="
-                  mt-1
-                  block
-                  w-full
-                  rounded-md
-                  border-gray-300
-                  shadow-sm
-                  focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                " rows="3"></textarea>
-            </label>
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center">
-                    <input type="checkbox" class="
-                        rounded
-                        border-gray-300
-                        text-indigo-600
-                        shadow-sm
-                        focus:border-indigo-300
-                        focus:ring
-                        focus:ring-offset-0
-                        focus:ring-indigo-200
-                        focus:ring-opacity-50
-                      " checked="">
-                    <span class="ml-2">Email me news and special offers</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-    
+  {{> layouts/header }}
+  {{> banners/banner-oneimage }}
+  <section class="px-3 py-16" id="-1">
+    <div class="card-text flex flex-col gap-6 xl:w-6/12 text-center mx-auto items-center justify-center">
+      <h1 class="card-title text-3xl lg:text-5xl font-display first-letter:text-primary leading-tight">Experience
+        CRUISE PACKAGE REQUEST</h1>
+      <div class="card-body text-sm font-light text-center text-red-500">
+        (all marked * fields are compulsory)
+      </div>
+      <div class="text-center">
+        Cruise name: <span class="text-2xl">Ha Long Bay | 1 night | Itinerary</span>
+      </div>
     </div>
-</section>
+
+    <div class="px-3 py-5 xl:w-6/12 mx-auto flex flex-col gap-6">
+      {{> form/input-text }}
+      {{> form/input-date }}
+      <div class="flex flex-row gap-6 form-full">
+        {{> form/input-number }} {{> form/input-number }} {{> form/input-number }}
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="w-full">Your preferred cabin type(s):</p>
+        <div class="flex flex-row gap-6 form-full">
+          {{> form/input-check }} {{> form/input-check }} {{> form/input-check }}{{> form/input-check }}
+        </div>
+      </div>
+      {{> form/input-text }}
+      {{> form/input-text }}
+      {{> form/input-text }}
+      {{> form/input-select }}
+      {{> form/input-text }}
+      {{> form/textarea }}
+      {{> form/input-select }}
+      <div class="flex flex-col gap-3">
+        <div class="flex flex-row items-center">
+          <div class="w-8/12">
+            {{> form/input-text }}
+          </div>
+          <div class="w-4/12 flex p-2 items-center">
+            Security code
+          </div>
+        </div>
+      </div>
+      <a class="btn-white flex flex-row relative group mx-auto" role="button">
+        <svg width="6" height="40" viewBox="0 0 6 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 0.5H5.5V14.8992L3 16.415L0.5 14.8992V0.5Z" stroke="#AC8671"></path>
+          <path d="M3 17.7071L5.29312 20.0002L3 22.2933L0.70688 20.0002L3 17.7071Z" stroke="#AC8671">
+          </path>
+          <path d="M5.5 39.5L0.5 39.5L0.500001 25.1008L3 23.585L5.5 25.1008L5.5 39.5Z" stroke="#AC8671">
+          </path>
+        </svg>
+
+        <div
+          class="group-hover:bg-primary group-hover:text-white flex justify-center text-primary items-center px-12 border-t border-b border-primary h-10 uppercase">
+          Book Now
+        </div>
+        <svg width=" 6" height="40" viewBox="0 0 6 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 0.5H5.5V14.8992L3 16.415L0.5 14.8992V0.5Z" stroke="#AC8671"></path>
+          <path d="M3 17.7071L5.29312 20.0002L3 22.2933L0.70688 20.0002L3 17.7071Z" stroke="#AC8671">
+          </path>
+          <path d="M5.5 39.5L0.5 39.5L0.500001 25.1008L3 23.585L5.5 25.1008L5.5 39.5Z" stroke="#AC8671">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    </div>
+  </section>
 </body>
 <script type="module" src="./assets/js/main.js"></script>
 
