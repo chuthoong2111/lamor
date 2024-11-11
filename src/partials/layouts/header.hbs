@@ -41,12 +41,86 @@
 		class="container mx-auto flex flex-wrap p-5 py-1 lg:py-3 flex-col md:flex-row items-center"
 	>
 		<nav
-			class="hidden lg:flex lg:w-1/2 flex-wrap py-4 lg:py-0 gap-y-4 flex-col lg:flex-row items-center text-base md:ml-auto uppercase font-semibold showhide-mobile order-2 lg:order-1"
-		>
-			<a href="#" class="lg:mr-10 hover:text-gray-900">home</a>
-			<a href="#" class="lg:mr-10 hover:text-gray-900">about us</a>
-			<a href="#" class="lg:mr-10 hover:text-gray-900">ROOM</a>
-			<a href="#" class="lg:mr-10 hover:text-gray-900">CRUISE ITINERARIES</a>
+			class="hidden w-full  lg:flex lg:w-1/2 flex-wrap py-4 lg:py-0 gap-y-4 flex-col lg:flex-row items-center text-base md:ml-auto uppercase font-semibold showhide-mobile order-2 lg:order-1">
+			<ul class="w-full lg:w-auto flex flex-col  gap-x-10 gap-y-5 lg:flex-row">
+				<li><a href="/" class="hover:text-gray-900">Trang chủ</a></li>
+				<li><a href="/vi/about-us" class="hover:text-gray-900">Về chúng tôi</a></li>
+
+				<li>
+					<div class="relative group w-full">
+						<a class="inline-flex w-full items-center  gap-x-1.5  hover:text-gray-900">
+							Phòng nghỉ
+							<svg class="transition ease-in-out delay-150 -mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+								fill="currentColor" aria-hidden="true">
+								<path fill-rule="evenodd"
+									d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</a>
+
+						<div
+							class="lg:min-w-[180px] lg:-translate-x-1/2 lg:left-1/2 relative lg:absolute transition ease-in-out delay-150 z-10 hidden bg-grey-200 lg:group-hover:block">
+							<div class="px-2 pt-2 pb-4 bg-white lg:shadow-lg rounded-b-xl">
+								<div class="dropdown-menu normal-case">
+									<ul>
+
+										<li><a href="/vi/accommodation/century"
+												class="dropdown-item block px-3 py-2 hover:text-gray-900">CENTURY</a></li>
+
+										<li><a href="/vi/accommodation/oriential"
+												class="dropdown-item block px-3 py-2 hover:text-gray-900">ORIENTIAL</a></li>
+
+										<li><a href="/vi/accommodation/imperial"
+												class="dropdown-item block px-3 py-2 hover:text-gray-900">IMPERIAL</a></li>
+
+										<li><a href="/vi/accommodation/majestic"
+												class="dropdown-item block px-3 py-2 hover:text-gray-900">MAJESTIC</a></li>
+
+										<li><a href="/vi/accommodation/royal-palace"
+												class="dropdown-item block px-3 py-2 hover:text-gray-900">ROYAL PALACE</a></li>
+
+										<ul>
+										</ul>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="relative group w-full">
+						<a class="inline-flex w-full items-center  gap-x-1.5  hover:text-gray-900">
+							Hải trình
+							<svg class="transition ease-in-out delay-150 -mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+								fill="currentColor" aria-hidden="true">
+								<path fill-rule="evenodd"
+									d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</a>
+
+						<div
+							class="relative  lg:min-w-[180px] lg:absolute lg:-translate-x-1/2 lg:left-1/2 transition ease-in-out delay-150 z-10 hidden bg-grey-200 w-full lg:group-hover:block">
+							<div class="px-2 pt-2 pb-4 bg-white lg:shadow-lg rounded-b-xl">
+								<div class="dropdown-menu normal-case">
+									<ul>
+
+										<li><a href="/vi/tours/2-ngay-1-dem"
+												class="dropdown-item block px-3 py-2 hover:text-gray-900">2 NGÀY 1 ĐÊM</a></li>
+
+										<li><a href="/vi/tours/3-ngay-2-dem"
+												class="dropdown-item block px-3 py-2 hover:text-gray-900">3 NGÀY 2 ĐÊM</a></li>
+
+										<ul>
+										</ul>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
 		</nav>
 		<div class="w-full flex lg:hidden justify-between items-center">
 			<div class="relative">
@@ -175,8 +249,8 @@
 			href="#"
 			class="hidden lg:flex absolute z-50 top-1 left-1/2 -translate-x-1/2 order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
 		><svg
-				width="151"
-				height="122"
+				width=""
+				height="96"
 				viewBox="0 0 151 122"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
@@ -261,8 +335,8 @@
 		</a>
 		<svg
 			class="hidden lg:block absolute top-full left-1/2 -translate-x-1/2 filter-shadow"
-			width="316"
-			height="87"
+			width=""
+			height="64"
 			viewBox="0 0 316 87"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -302,13 +376,16 @@
 				</filter>
 			</defs>
 		</svg>
-		<nav
-			class="hidden lg:flex justify-end lg:w-1/2 flex-wrap pb-4 lg:py-0 gap-y-4 flex-col lg:flex-row items-center text-base md:ml-auto uppercase font-semibold showhide-mobile order-3 lg:order-3"
-		>
-			<a href="#" class="lg:ml-10 hover:text-gray-900">GALLERY</a>
-			<a href="#" class="lg:ml-10 hover:text-gray-900">GUEST REVIEWS</a>
-			<a href="#" class="lg:ml-10 hover:text-gray-900">new & event</a>
-			<a href="#" class="lg:ml-10 hover:text-gray-900">Booking</a>
-		</nav>
+	<nav
+		class="w-full hidden lg:flex justify-end lg:w-1/2 flex-wrap pb-4 lg:py-0 gap-y-4 flex-col lg:flex-row items-center text-base md:ml-auto uppercase font-semibold showhide-mobile order-3 lg:order-3">
+		<ul class="flex flex-col gap-x-10 gap-y-5 lg:flex-row w-full lg:w-auto ">
+			<li><a href="/vi/services-facilities" class=" hover:text-gray-900 lnkServices">Dịch vụ</a></li>
+			<li><a href="/vi/gallery" class=" hover:text-gray-900 lnkGallery">GALLERY</a></li>
+			<li><a href="/vi/news" class=" hover:text-gray-900 lnkNews">Tin tức &amp; Sự kiện</a></li>
+			<li><a href="/vi/check-availability" class=" hover:text-gray-900 lnkBooking">Đặt phòng</a></li>
+		</ul>
+
+
+	</nav>
 	</div>
 </header>

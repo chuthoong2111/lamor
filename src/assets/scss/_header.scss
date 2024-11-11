@@ -90,3 +90,9 @@
 #lang2:checked~#sortmenu2 {
     opacity: 1;
 }
+.dropdown-menu a{
+    @apply normal-case;
+    &:hover{
+        @apply bg-primary/20 rounded-md
+    }
+}

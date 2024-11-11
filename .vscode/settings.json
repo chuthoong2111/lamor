@@ -9,5 +9,10 @@
         "swiper",
         "tailwindcss"
     ],
-    "files.trimTrailingWhitespace": true
+    "scss.lint.unknownAtRules": "ignore",
+    "css.customData": [
+        ".vscode/tailwind.json"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "liveServer.settings.port": 5502
 }

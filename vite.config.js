@@ -67,6 +67,7 @@ export default defineConfig({
 				index: resolve(__dirname, "src", "index.html"),
 				roomlist: resolve(__dirname, "src", "roomlist.html"),
 				tourlist: resolve(__dirname, "src", "tourlist.html"),
+				tourlistv2: resolve(__dirname, "src", "tourlistv2.html"),
 				newslist: resolve(__dirname, "src", "newslist.html"),
 				tourdetail: resolve(__dirname, "src", "tourdetail.html"),
 				roomdetail: resolve(__dirname, "src", "roomdetail.html"),

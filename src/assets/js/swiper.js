@@ -10,13 +10,13 @@ const swiper = new Swiper(".banner", {
 	slidesPerView: 1,
 	spaceBetween: 20,
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".banner .swiper-pagination",
 		dynamicBullets: true,
 	},
 	// Navigation arrows
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".banner .swiper-button-next",
+		prevEl: ".banner .swiper-button-prev",
 	},
 });
 
@@ -45,12 +45,12 @@ const swiper2 = new Swiper(".roomSwiper", {
 		},
 	},
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".roomSwiper .swiper-pagination",
 	},
 	// Navigation arrows
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".roomSwiper .swiper-button-next",
+		prevEl: ".roomSwiper .swiper-button-prev",
 	},
 });
 const swiper3 = new Swiper(".tourSwiper", {
@@ -78,12 +78,12 @@ const swiper3 = new Swiper(".tourSwiper", {
 		},
 	},
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".tourSwiper .swiper-pagination",
 	},
 	// Navigation arrows
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".tourSwiper .swiper-button-next",
+		prevEl: ".tourSwiper .swiper-button-prev",
 	},
 });
 const swiper4 = new Swiper(".testimonialSwiper", {
@@ -91,12 +91,12 @@ const swiper4 = new Swiper(".testimonialSwiper", {
 	slidesPerView: 1,
 	spaceBetween: 20,
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".testimonialSwiper .swiper-pagination",
 		dynamicBullets: true,
 	},
 	// Navigation arrows
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".testimonialSwiper .swiper-button-next",
+		prevEl: ".testimonialSwiper .swiper-button-prev",
 	},
 });

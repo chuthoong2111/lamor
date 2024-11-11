@@ -13,7 +13,7 @@
     {{> layouts/header }}
     {{> banners/banner-oneimage }}
     <main class="mx-7 lg:mx-6 flex-grow ">
-        <article class="max-w-5xl mx-auto prose  my-10 lg:my-40 ">
+        <article class="max-w-3xl mx-auto prose  my-6 lg:my-20 ">
             <header class="mb-14">
                 <h1 class="text-3xl text-center font-bold leading-normal text-slate-900 mt-0 mb-3">Typography</h1>
                 <div class="text-center">Published on 21 June 2020 08:04 AM</div>
@@ -101,7 +101,7 @@
     	}
     	return cookie, nil
     }
-    
+
     func setCookie(cookie *http.Cookie, w interface{}) error {
     	// Get write interface registered using `Acquire` method in handlers.
     	wr := w.(http.ResponseWriter)
@@ -179,17 +179,19 @@
             <h3 class="card-title text-3xl text-center font-display">
                 Another Active </h3>
             <hr class="m-4">
-            <div class="grid gap-4 lg:grid-cols-3 lg:gap-4 2xl:gap-12 items-center">
+            <div class="grid gap-4 lg:grid-cols-3 lg:gap-4 2xl:gap-6 items-center">
                 {{#each (range 1 6)}}
                 <div class="card-body flex flex-col gap-4 p-3">
                     <h3 class="card-title text-xl font-display">
-                        <a class="border-s-2 border-primary pl-4" href="#">
-                            Premier Two Queen Guestroom
+                        <a class="border-s-2 border-primary pl-4 block hover:bg-primary/10" href="#">
+                            Premier Two Queen Guestroom Premier Two Queen Guestroom
                         </a>
                     </h3>
-                    <div class="card-text line-clamp-5">
-                        <img class="mb-4 object-cover aspect-[3/2]" src="https://placehold.jp/600x400.png"
+
+                    <img class="object-cover aspect-[16/9]" src="https://placehold.jp/600x400.png"
                             loading="lazy" alt="600x400" />
+                    <div class="card-text line-clamp-5">
+
                         Emotion cruise is designed based on the idea of contemporary,
                         luxurious, quintessential style. She inherited the precious experience
                         of her sister - Stellar of the Seas, to make us stand out and unique
