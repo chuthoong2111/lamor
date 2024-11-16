@@ -7,6 +7,6 @@
 
     &::before {
         content: "";
-        @apply blur-md bg-white/20 w-full h-full left-0 top-0 absolute z-10;
+        @apply  bg-white/80 w-full h-full left-0 top-0 absolute z-10;
     }
 }

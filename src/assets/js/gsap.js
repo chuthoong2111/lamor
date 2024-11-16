@@ -4,40 +4,49 @@ import gsap from "gsap";
 // get other plugins:
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-const sections = gsap.utils.toArray("section");
-// gsap.set(sections, { opacity: 0 });
-
-// sections.forEach((section) => {
-// 	ScrollTrigger.create({
-// 		trigger: section,
-// 		start: "top center",
-// 		end: "bottom center",
-
-// 		onEnter: () => {
-// 			gsap.to(section, { opacity: 1 });
-// 			//   video.play();
-// 		},
-// 		onEnterBack: () => (section, { opacity: 1 }),
-// 		onLeave: () => (section, { opacity: 1 }),
-// 		onLeaveBack: () => (section, { opacity: 1 }),
-// 	});
-// });
-// usage:
-// usage:
+gsap.set([".card", ".item", ".Marquee-tag"], {y: 20, autoAlpha: 0,});
+// Sử dụng ScrollTrigger.batch để xử lý nhiều phần tử cùng một lúc
 ScrollTrigger.batch([".card", ".item", ".Marquee-tag"], {
-	autoAlpha:0,
-	interval: 0.1, // time window (in seconds) for batching to occur. The first callback that occurs (of its type) will start the timer, and when it elapses, any other similar callbacks for other targets will be batched into an array and fed to the callback. Default is 0.1
-	batchMax: 4, // maximum batch size (targets)
-	onEnter: (batch) =>
-		gsap.to(batch, { autoAlpha: 1, stagger: 0.15, overwrite: true }),
-	onLeave: (batch) => gsap.set(batch, { autoAlpha: 1, overwrite: true }),
-	onEnterBack: (batch) =>
-		gsap.to(batch, { autoAlpha: 0, stagger: 0.15, overwrite: true }),
-	onLeaveBack: (batch) => gsap.set(batch, { autoAlpha: 0, overwrite: true }),
-	// you can also define things like start, end, etc.\
-	start: "top center",
-	end: "bottom center",
+
+  interval: 0.1,
+  batchMax: 6,  // Số lượng phần tử tối đa được xử lý cùng lúc
+  onEnter: batch => gsap.to(batch, {
+    autoAlpha: 1,
+    y: 0,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: batch, // Sử dụng batch như trigger
+      start: "top 90%",  // Khi phần tử đầu tiên của batch chạm tới center của viewport
+      end: "bottom 10%", // Khi phần tử cuối cùng trong batch đi qua center của viewport
+      toggleActions: "play none none reverse", // Đảm bảo hiệu ứng lặp lại khi cuộn lên và xuống
+    }
+  }),
 });
+
+
+// Chọn tất cả các phần tử có class '.my-class-1', '.my-class-2', '.my-class-3', ...
+// gsap.utils.batch(['.card", ".item", ".Marquee-tag'], (elements) => {
+//   gsap.fromTo(
+//     elements,
+//     {
+//       opacity: 0,
+//       y: 100,
+//     },
+//     {
+//       opacity: 1,
+//       y: 0,
+//       scrollTrigger: {
+//         trigger: elements, // Các phần tử này sẽ là trigger
+//         start: 'top 90%',   // Bắt đầu khi phần tử cách 2% từ trên cùng
+//         end: 'top 10%',     // Kết thúc khi phần tử đi qua điểm 10% từ trên
+//         scrub: true,        // Đồng bộ hiệu ứng với cuộn chuột
+//         markers: false,     // Tắt markers (có thể bật khi debug)
+//         toggleActions: 'restart pause resume reverse', // Lặp lại hiệu ứng khi cuộn lên hoặc xuống
+//       }
+//     }
+//   );
+// });
+
 
 // menu humberger
 const btn = document.getElementById("menuBtn");
