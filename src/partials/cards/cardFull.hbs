@@ -1,11 +1,22 @@
 <div class="card">
-	<div class="card-header">
+	<div class="card-header relative">
 		<img
 			class="object-cover aspect-[3/2]"
 			src="https://placehold.jp/600x400.png"
 			loading="lazy"
 			alt="600x400"
 		/>
+		<div class="badge" >
+  {{!-- <img src="https://assets.codepen.io/1506195/me.jpeg" /> --}}
+  <div class="w-max flex items-center bg-primary-dark shadow-lg rounded-full font-[sans-serif]">
+  <span
+    class="bg-primary text-xs text-white/80 rounded-full w-10 h-10 flex items-center justify-center">Price</span>
+  <div class="flex flex-col">
+	<span class="price-new font-semibold ml-3 mr-5 leading-none mb-1">120 USD</span>
+	<span class="price-old line-through ml-3 mr-5 leading-none">140 USD</span>
+  </div>
+</div>
+</div>
 	</div>
 	<div class="card-body flex flex-col gap-3 p-3">
 		<h3 class="card-title text-xl font-display">Premier Two Queen Guestroom</h3>

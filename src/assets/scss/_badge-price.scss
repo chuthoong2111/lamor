@@ -1,0 +1,23 @@
+
+  .badge {
+    display: flex;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    // filter: drop-shadow(0 0 0.5rem #0003);
+    position: absolute;
+    bottom: .5rem;
+    left:.5rem;
+  }
+
+
+
+  .badge .price-new {
+    color: #fff;
+    font-weight: 500;
+    font-size: .9rem;
+  }
+
+  .badge .price-old {
+    font-size: 0.7rem;
+    color: #ccc;
+  }
