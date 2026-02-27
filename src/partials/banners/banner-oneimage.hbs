@@ -1,11 +1,11 @@
 <!-- Swiper -->
 
 <div class="banner-oneimage relative">
-	<img
-		class="object-cover aspect-21/9 w-full"
-		src="https://placehold.jp/1900x800.png"
-		alt="banner"
-		loading="lazy"
-	/>
+
+	<picture class="object-cover">
+  <source srcset="https://placehold.jp/640x640.png" media="(max-width: 640px)">
+  <source srcset="https://placehold.jp/1900x800.png" media="(min-width: 641px)">
+  <img src="img_flowers.jpg" alt="Flowers">
+</picture>
   {{> layouts/breadcrumbs}}
 </div>
