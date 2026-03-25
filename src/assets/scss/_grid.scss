@@ -1,0 +1,102 @@
+@use "sass:math";
+@use "variables" as *;
+
+/* ===== Container ===== */
+%container-base {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--bs-gutter-x, #{$gutter});
+}
+
+.container {
+  @extend %container-base;
+}
+
+@each $bp, $bp-width in $breakpoints {
+
+  .container-#{$bp} {
+    @extend %container-base;
+  }
+
+  @media (min-width: $bp-width) {
+    .container,
+    .container-#{$bp} {
+      max-width: map-get($container-max-widths, $bp);
+    }
+  }
+}
+
+/* ===== Row ===== */
+.row {
+  --bs-gutter-x: #{$gutter};
+  --bs-gutter-y: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-inline: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-inline: calc(var(--bs-gutter-x) * 0.5);
+}
+
+/* ===== Columns ===== */
+.col {
+  flex: 1 0 0%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+/* ===== Grid columns ===== */
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: percentage(math.div($i, $grid-columns));
+  }
+}
+
+/* ===== Responsive ===== */
+@each $bp, $bp-width in $breakpoints {
+
+  @media (min-width: $bp-width) {
+
+    .col-#{$bp} {
+      flex: 1 0 0%;
+    }
+
+    .col-#{$bp}-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+
+    @for $i from 1 through $grid-columns {
+      .col-#{$bp}-#{$i} {
+        flex: 0 0 auto;
+        width: percentage(math.div($i, $grid-columns));
+      }
+    }
+
+  }
+}
+
+/* ===== Gutters ===== */
+@each $i, $space in $spacers {
+
+  .g-#{$i},
+  .gx-#{$i} {
+    --bs-gutter-x: #{$space};
+  }
+
+  .g-#{$i},
+  .gy-#{$i} {
+    --bs-gutter-y: #{$space};
+  }
+}

@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+/* ===== Flex base ===== */
+.d-flex { display: flex; }
+.d-inline-flex { display: inline-flex; }
+
+/* Direction */
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+
+/* Justify */
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+/* Align */
+.align-items-start, .items-start { align-items: flex-start; }
+.align-items-center, .items-center { align-items: center; }
+.align-items-end, .items-end { align-items: flex-end; }
+
+/* Wrap */
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+/* ===== Responsive flex ===== */
+@each $bp, $bp-width in $breakpoints {
+  @media (min-width: $bp-width) {
+    .d-#{$bp}-flex { display: flex; }
+    .flex-#{$bp}-row { flex-direction: row; }
+    .flex-#{$bp}-column { flex-direction: column; }
+    .justify-#{$bp}-between { justify-content: space-between; }
+    .items-#{$bp}-center { align-items: center; }
+  }
+}

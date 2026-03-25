@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/fix.css" />
+<!-- <link rel="stylesheet" href="./css/book.css" /> -->
+<!-- <link rel="stylesheet" href="./css/onlybooking.css" /> -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+<body>
+    {{> layouts/header }}
+    <div class="header d-none d-lg-block" style="height:100px;"></div>
+  <main class="layout-booking">
+    <section class="d-flex flex-column gap-4 w-100">
+      <h1 class="fs-5 fw-bold text-center">Select your dates at Amanoi</h1>
+      <div class="container text-center">
+        <ul class="step-area list-unstyled mx-auto">
+          <li class="steptag position-relativ active">
+            <a href="#">
+              <span class="icon"><i class="ri-check-fill"></i></span>
+              <span>Enhancements & Details</span>
+            </a>
+          </li>
+          <li class="steptag position-relative">
+            <a href="">
+              <span class="icon">2</span>
+              <span>Enhancements & Details</span>
+            </a>
+          </li>
+          <li class="steptag position-relative">
+            <a href="#">
+              <span class="icon">3</span>
+              <span>Enhancements & Details</span>
+            </a>
+          </li>
+          <li class="steptag position-relative">
+            <a href="#">
+              <span class="icon">4</span>
+              <span>Enhancements & Details</span>
+            </a>
+          </li>
+        </ul>
+        <div class="col-lg-10 mx-auto mt-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="calendar form-control p-0">
+                <div class="title-calendar">Select your dates</div>
+                <div class="month">
+                  <a href="javascript:void(0)" class="nav prev-1" onclick="prevCalendar()">
+                    <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                  </a>
+                  <div class="d-flex justify-content-center align-items-center w-100 ">
+                    <select id="ddlMonthCalendar" class="form-select border-0 w-50">
+                      <option value="6">June</option>
+                      <option value="7">July</option>
+                      <option value="8">August</option>
+                      <option value="9">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                    <span class="year w-50">
+                      <select id="ddlYearCalendar" class="form-select border-0  w-100">
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                      </select></span>
+                  </div>
+                  <a href="javascript:void(0)" class="nav next-1"><i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                </div>
+                <div class="days">
+                  <span class="holiday">Sun</span>
+                  <span>Mon</span>
+                  <span>Tue</span>
+                  <span>Wed</span>
+                  <span>Thu</span>
+                  <span>Fri</span>
+                  <span class="holiday">Sat</span>
+
+                </div>
+                <div class="dates"><a class="button"><time>&nbsp;</time></a><a class="button"><time>&nbsp;</time></a><a
+                    class="button"><time>&nbsp;</time></a><a class="button"><time>&nbsp;</time></a><a
+                    class="button"><time>&nbsp;</time></a><a class="button"><time>&nbsp;</time></a><a
+                    class="button holiday day-disable" href="javascript:void(0)"><time>1</time><small>2,230K</small></a><a
+                    class="button holiday day-disable" href="javascript:void(0)"><time>2</time><small>2,230K</small></a><a
+                    class="button day-disable" href="javascript:void(0)"><time>3</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>4</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>5</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>6</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>7</time><small>2,230K</small></a><a class="button holiday day-disable"
+                    href="javascript:void(0)"><time>8</time><small>2,230K</small></a><a class="button holiday day-disable"
+                    href="javascript:void(0)"><time>9</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>10</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>11</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>12</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>13</time><small>2,230K</small></a><a class="button day-disable"
+                    href="javascript:void(0)"><time>14</time><small>2,230K</small></a><a
+                    class="button today holiday day-full day-selected-disable"
+                    href="javascript:void(0)"><time>15</time><small>2,230K</small></a><a class="button holiday day-available"
+                    href="javascript:void(0)" onclick="selectedDate('2024/6/16')"><time>16</time><small>2,230K</small></a><a
+                    class="button day-available" href="javascript:void(0)"
+                    onclick="selectedDate('2024/6/17')"><time>17</time><small>2,230K</small></a><a class="button day-full"
+                    href="javascript:void(0)"><time>18</time><small>2,230K</small>
+                    </a><a class="button day-available day-selected"
+                    href="javascript:void(0)" onclick="selectedDate('2024/6/19')"><time>19</time><small>2,230K</small></a><a
+                    class="button day-available day-selected" href="javascript:void(0)"
+                    onclick="selectedDate('2024/6/20')"><time>20</time><small>2,230K</small></a><a class="button day-available day-selected"
+                    href="javascript:void(0)" onclick="selectedDate('2024/6/21')"><time>21</time><small>2,230K</small></a><a
+                    class="button holiday day-available" href="javascript:void(0)"
+                    onclick="selectedDate('2024/6/22')"><time>22</time><small>2,230K</small></a><a class="button holiday day-available"
+                    href="javascript:void(0)" onclick="selectedDate('2024/6/23')"><time>23</time><small>2,230K</small></a><a
+                    class="button day-available" href="javascript:void(0)"
+                    onclick="selectedDate('2024/6/24')"><time>24</time><small>2,230K</small></a><a class="button day-available"
+                    href="javascript:void(0)" onclick="selectedDate('2024/6/25')"><time>25</time><small>2,230K</small></a><a
+                    class="button day-available" href="javascript:void(0)"
+                    onclick="selectedDate('2024/6/26')"><time>26</time><small>2,230K</small></a><a class="button day-available"
+                    href="javascript:void(0)" onclick="selectedDate('2024/6/27')"><time>27</time><small>2,230K</small></a><a
+                    class="button day-available" href="javascript:void(0)"
+                    onclick="selectedDate('2024/6/28')"><time>28</time><small>2,230K</small></a><a class="button holiday day-available"
+                    href="javascript:void(0)" onclick="selectedDate('2024/6/29')"><time>29</time><small>2,230K</small></a><a
+                    class="button holiday day-available" href="javascript:void(0)"
+                    onclick="selectedDate('2024/6/30')"><time>30</time><small>2,230K</small></a></div>
+              </div>
+            </div>
+             <!-- <small>2,230K</small> -->
+            <div class="col-lg-6 d-flex flex-column gap-4 mt-3  mt-lg-0">
+              <div class="date-start d-flex flex-row gap-2">
+                <div class="flex-fill w-50">
+                  <div class="label">Departure Date</div>
+                  <div class="day-month">
+                    <span class="day">02nd OCT 2024</span>
+                    <!-- <span class="month">May</span> -->
+                  </div>
+                </div>
+               <div class="flex-fill w-50">
+                  <div class="label">Arrival Date</div>
+                  <div class="day-month">
+                    <span class="day">04nd OCT 2024</span>
+                    <!-- <span class="month">May</span> -->
+                  </div>
+                </div>
+              </div>
+
+             <div class="d-flex flex-column gap-2">
+                <select name="1" id="1" class="form-select form-select-xl">
+                  <option value="1" disabled selected>Chọn tàu</option>
+                </select>
+                <select name="2" id="2" class="form-select form-select-xl">
+                  <option value="1" selected>1 room</option>
+                </select>
+                <select name="3" id="3" class="form-select form-select-xl">
+                  <option value="2" selected>2 adult (12+ years)</option>
+                  <option value="2" selected>3 adult </option>
+                </select>
+             </div>
+              <!-- <select name="4" id="4" class="form-select form-select-xl">
+                <option value="1" selected>0 Children (5 - 11 yrs)</option>
+              </select>
+              <select name="5" id="5" class="form-select form-select-xl">
+                <option value="1" selected>0 Infant (0 - 4 yrs)</option>
+              </select> -->
+              <button class="rounded-0 btn-booking xl"> Check availability</button>
+               <ul class="d-flex justify-content-center align-items-center gap-3 list-unstyled note-avaible mt-5">
+            <li class="d-flex align-items-center gap-2">
+              <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="17" height="17" stroke="#333333"/>
+<path d="M10.8295 7.45455C10.7784 7.02273 10.571 6.6875 10.2074 6.44886C9.84375 6.21023 9.39773 6.09091 8.86932 6.09091C8.48295 6.09091 8.14489 6.15341 7.85511 6.27841C7.56818 6.40341 7.34375 6.57528 7.18182 6.79403C7.02273 7.01278 6.94318 7.26136 6.94318 7.53977C6.94318 7.77273 6.99858 7.97301 7.10938 8.14062C7.22301 8.3054 7.3679 8.44318 7.54403 8.55398C7.72017 8.66193 7.90483 8.75142 8.09801 8.82244C8.29119 8.89062 8.46875 8.94602 8.63068 8.98864L9.51705 9.22727C9.74432 9.28693 9.99716 9.36932 10.2756 9.47443C10.5568 9.57955 10.8253 9.72301 11.081 9.90483C11.3395 10.0838 11.5526 10.3139 11.7202 10.5952C11.8878 10.8764 11.9716 11.2216 11.9716 11.6307C11.9716 12.1023 11.848 12.5284 11.6009 12.9091C11.3565 13.2898 10.9986 13.5923 10.527 13.8168C10.0582 14.0412 9.48864 14.1534 8.81818 14.1534C8.19318 14.1534 7.65199 14.0526 7.1946 13.8509C6.74006 13.6491 6.3821 13.3679 6.12074 13.0071C5.86222 12.6463 5.71591 12.2273 5.68182 11.75H6.77273C6.80114 12.0795 6.91193 12.3523 7.10511 12.5682C7.30114 12.7812 7.5483 12.9403 7.84659 13.0455C8.14773 13.1477 8.47159 13.1989 8.81818 13.1989C9.22159 13.1989 9.58381 13.1335 9.90483 13.0028C10.2259 12.8693 10.4801 12.6847 10.6676 12.4489C10.8551 12.2102 10.9489 11.9318 10.9489 11.6136C10.9489 11.3239 10.8679 11.0881 10.706 10.9062C10.544 10.7244 10.331 10.5767 10.0668 10.4631C9.80256 10.3494 9.51705 10.25 9.21023 10.1648L8.13636 9.85795C7.45455 9.66193 6.91477 9.3821 6.51705 9.01847C6.11932 8.65483 5.92045 8.17898 5.92045 7.59091C5.92045 7.10227 6.05256 6.67614 6.31676 6.3125C6.58381 5.94602 6.94176 5.66193 7.39062 5.46023C7.84233 5.25568 8.34659 5.15341 8.90341 5.15341C9.46591 5.15341 9.96591 5.25426 10.4034 5.45597C10.8409 5.65483 11.1875 5.92756 11.4432 6.27415C11.7017 6.62074 11.8381 7.0142 11.8523 7.45455H10.8295Z" fill="black"/>
+</svg>
+
+</span>
+              <span> Selected dates</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="17" height="17" stroke="#999999"/>
+<path d="M11.9773 5.27273V14H10.9545L6.19886 7.14773H6.11364V14H5.05682V5.27273H6.07955L10.8523 12.142H10.9375V5.27273H11.9773Z" fill="#999999"/>
+</svg>
+
+</span>
+              <span>No availability</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#F5F5F5"/>
+<path d="M4.05682 13V4.27273H9.28977V5.21023H5.11364V8.15909H8.89773V9.09659H5.11364V13H4.05682Z" fill="#999999"/>
+</svg>
+</span>
+              <span>Full</span>
+            </li>
+          </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> layouts/footer }}
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/onlybook.js"></script>
+</body>
+
+</html>

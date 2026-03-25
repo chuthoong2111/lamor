@@ -11,3 +11,9 @@ window.addEventListener("scroll", function () {
     header.classList.remove("pt-scroll");
   }
 });
+document.querySelectorAll(".toggle-menu").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".dropdown-menu-area").classList.toggle("hidden");
+  });
+
+});

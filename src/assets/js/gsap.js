@@ -13,6 +13,7 @@ ScrollTrigger.batch([".card", ".item", ".Marquee-tag"], {
   onEnter: batch => gsap.to(batch, {
     autoAlpha: 1,
     y: 0,
+	once: true,
     stagger: 0.1,
     scrollTrigger: {
       trigger: batch, // Sử dụng batch như trigger

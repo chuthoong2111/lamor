@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/fix.css" />
+<link rel="stylesheet" href="./css/book.css" />
+<link rel="stylesheet" href="./css/onlybooking.css" />
+<link rel="stylesheet" href="https://lamourcruise.com/assets/css/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+<body>
+  {{> layouts/header }}
+    <div class="header d-none d-lg-block" style="height:100px;"></div>
+  <main class="layout-booking">
+    <section class="d-flex flex-column gap-4 w-100">
+      <h1 class="fs-5 fw-bold text-center">Enhancements & Details</h1>
+      <div class="container text-center">
+        <ul class="step-area list-unstyled m-auto">
+          <li class="steptag position-relativ active">
+            <a href="#">
+              <span class="icon"><i class="ri-check-fill"></i></span>
+              <span>name step</span>
+            </a>
+          </li>
+          <li class="steptag position-relative active">
+            <a href="">
+              <span class="icon">2</span>
+              <span>name step</span>
+            </a>
+          </li>
+          <li class="steptag position-relative active">
+            <a href="#">
+              <span class="icon">3</span>
+              <span>name step</span>
+            </a>
+          </li>
+          <li class="steptag position-relative active">
+            <a href="#">
+              <span class="icon">4</span>
+              <span>Success</span>
+            </a>
+          </li>
+        </ul>
+        <div class="col-lg-12  mx-auto p-5 my-5 text-center" style="background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(51,204,204,.15) 100%); border-radius: 4px; border: 1px solid rgba(51,204,204,.4);">
+          <img class="col-2 col-md-1 mx-auto" src="./images/double-check.gif" alt="#">
+          <h1 class="fs-3 d-flex flex-row gap-3 justify-content-center align-items-center">
+
+
+      <span>Booking done succesfully</span>
+</h1>
+          <p class="">
+            Bạn đã hoàn thành việc book tàu. <br>
+            Chúc bạn một ngày tốt lành và có chuyến đi tuyệt vời.
+          </p>
+        </div>
+        <div class="col-lg-12 mx-auto mt-4">
+          <div class="row">
+            <div class="col-lg-7 total-area text-start">
+              <div class="accordion" id="collapse-book">
+                <div class="accordion-item border-0 bg-transparent rounded-0">
+                  <h2 class="accordion-header border-0 bg-transparent rounded-0">
+                    <div class="accordion-button border-0 bg-transparent rounded-0 shadow-none px-0" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panel1" aria-expanded="true" aria-controls="panel1">
+                      <span> Your cruise reservation</span>
+                    </div>
+                  </h2>
+                  <div id="panel1" class="accordion-collapse collapse show">
+                    <div class="accordion-body px-0 py-2">
+                      <ul class="infomation-book list-unstyled d-flex flex-column gap-2 p-0 border-0">
+                        <li class="d-flex">
+                          <label for="text"> Cruise </label>
+                          <span class="content">
+                            Indochine Premium Halong
+                          </span>
+                          <div class="action">
+                            <a href="#">Edit</a>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <label for="text"> Depart </label>
+                          <span class="content">
+                            31/05/2024&nbsp;(from 11.30 AM to 11.55 AM)
+                          </span>
+                          <div class="action">
+                            <a href="#">Edit</a>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <label for="text"> Return </label>
+                          <span class="content">
+                            01/06/2024 (from 11.00 AM to 11.15 AM)
+                          </span>
+                          <div class="action">
+                            <label class="container-chec-rad">2D1N
+                              <input type="radio" checked="checked" name="radio" />
+                              <span class="checkmark radio"></span>
+                            </label>
+                            <label class="container-chec-rad">3D2N
+                              <input type="radio" checked="checked" name="radio" />
+                              <span class="checkmark radio"></span>
+                            </label>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <label for="text"> Number of cabin </label>
+                          <span class="content">
+                            3&nbsp;Room&nbsp;-&nbsp;4&nbsp;Adult&nbsp;-&nbsp;0&nbsp;Child
+                          </span>
+                          <div class="action">
+                            <a href="#">Edit</a>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="list-unstyled d-flex flex-column gap-2 room-group">
+                        <li class="item-room haveroom flex-wrap flex-xl-nowrap">
+                          <div class="img"
+                            style="background: #eee url('../images/1.jpg') center center / cover no-repeat;">
+                          </div>
+                          <div class="content d-flex flex-column flex-grow-1">
+                            <div class="content d-flex flex-column gap-2 form-request">
+                              <span class="text-secondary">ROOM 1</span>
+                              <div
+                                class="d-flex flex-row  justify-content-lg-start gap-2 mb-2">
+                                <strong>Lake Pavilion</strong>
+                                <span>Special Offer</span>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <span class="label text-secondary flex-ba">Guests:</span>
+                                <div class="d-flex gap-4 w-100">
+                                  <label class="fw-bold text-nowrap">Adults: 22</label>
+                                  <label class="fw-bold text-nowrap">Child: 32</label>
+                                  <label class="fw-bold text-nowrap">Infants: 1</label>
+
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center my-2">
+                                <span class="label text-secondary">Bed preference:</span>
+                                <div class="d-flex gap-3 w-100">
+                                  <label class="container-chec-rad">2D1N
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark radio"></span>
+                                  </label>
+                                  <label class="container-chec-rad">2D1N
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark radio"></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class=" flex-fill d-flex flex-column flex-sm-row flex-md-column flex-lg-row flex-xl-column align-items-end align-items-sm-start align-items-md-end rate-room gap-2">
+                            <span class="text-secondary">RATE</span>
+                            <div class="d-flex flex-column flex-sm-row  flex-md-column flex-lg-row flex-xl-column align-items-end align-items-lg-center align-items-xl-end gap-lg-2 gap-md-0 lh-sm text-end">
+                              <span class="offer fs-6 fw-normal">$3,070</span>
+                              <span class="offer text-secondary small">Excluding taxes &amp; fees</span>
+                            </div>
+                            <div class="action mt-auto my-2 ms-auto me-0">
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="item-room border-0 p-3 h-auto align-items-start">
+                          <div class="content d-flex flex-column gap-2 form-request">
+                            <span class="text-secondary">ROOM 1</span>
+                            <div class="d-flex flex-column">
+                              <strong>Lake Pavilion</strong>
+                              <span>Special Offer</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <span class="label text-secondary">Guests:</span>
+                              <div class="d-flex gap-4 w-100">
+                                <label class="fw-bold">Adults: 12</label>
+                                <label class="fw-bold">Child: 22</label>
+                                <label class="fw-bold">Infants: 1</label>
+
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-2">
+                              <span class="label text-secondary">Bed preference:</span>
+                              <div class="d-flex gap-4 w-100">
+                                <label class="container-chec-rad">2D1N
+                                  <input type="radio" checked="checked" name="radio" />
+                                  <span class="checkmark radio"></span>
+                                </label>
+                                <label class="container-chec-rad">2D1N
+                                  <input type="radio" checked="checked" name="radio" />
+                                  <span class="checkmark radio"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column align-items-end rate-room gap-2">
+                            <span class="text-secondary">RATE</span>
+                            <div class="d-flex flex-column text-end lh-sm">
+                              <span class="offer fs-6 fw-normal">$3,070</span>
+                              <span class="offer text-secondary small">Excluding taxes &amp; fees</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#" class="opacity-50">Cancellation policy:
+                            <i class="ri-file-info-line"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panel-2" aria-expanded="false" aria-controls="panel-2">
+                      <span>Transfer from Hanoi (Optional)</span>
+                    </div>
+                  </h2>
+                  <div id="panel-2" class="accordion-collapse collapse show">
+                    <div class="accordion-body px-0 py-2">
+                      <ul class="list-unstyled">
+                        <li class="row py-2 align-items-start">
+                          <div class="col-md-7">
+                            <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                              <input type="checkbox" checked="checked" name="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="col-md-3 col-8 d-flex gap-1">
+                            <input class="w-80px text-center form-control form-control-sm" min="1" value="1"
+                              type="number" id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                            <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                          </div>
+                          <div class="col-md-2 col-4 text-end">
+                            <span class="offer fs-6 fw-normal">$3,070</span>
+                          </div>
+                        </li>
+                        <li class="row py-2 align-items-start">
+                          <div class="col-md-7">
+                            <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                              <input type="checkbox" checked="checked" name="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="col-md-3 col-8 d-flex gap-1">
+                            <input class="w-80px text-center form-control form-control-sm" min="1" value="1"
+                              type="number" id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                            <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                          </div>
+                          <div class="col-md-2 col-4 text-end">
+                            <span class="offer fs-6 fw-normal">$3,070</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="row py-2 border-top border-primary border-opacity-25 g-0">
+                        <div class="col-6 fs-6 fw-bold">Total</div>
+                        <div class="col-6 fs-6 fw-bold text-end">$75</div>
+                        <div class="col-12 mt-3 form-request">
+                          <div class="mb-3 position-relative">
+                            <textarea rows="2" cols="8" name="special_request"
+                              placeholder="If you have any special requests (special dietary requirements, child car seat, kid meal, anniversary...), please let us know."
+                              id="txtSpecial_request" class="form-control form-control-edit"></textarea>
+                            <label for="txtSpecial_request" class="form-label label-control-2">Special Request (subject
+                              to availability)</label>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#pannel-3" aria-expanded="false" aria-controls="pannel-3">
+                      <span> Another service</span>
+                    </div>
+                  </h2>
+                  <div id="pannel-3" class="accordion-collapse collapse show">
+                    <!-- <div class="accordion-body px-0 py-2">
+                      <ul class="list-unstyled">
+                        <li class="row py-2">
+                          <div class="col-lg-7 d-flex mb-2 mb-lg-0">
+                            <button type="button" class="btn-close btn-sm scale" aria-label="Close"></button>
+                            <select class="form-select form-select-sm" aria-label="">
+                              <option selected="">2 Adults</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-3 col-8 ps-5 ps-lg-0 d-flex gap-1">
+                            <input class="w-80px text-center form-control form-control-sm" min="1" value="1"
+                              type="number" id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                            <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                          </div>
+                          <div class="col-lg-2 col-4 text-end">
+                            <span class="offer fs-6 fw-normal">$3,070</span>
+                          </div>
+                        </li>
+                        <li class="row py-2">
+                          <div class="col-lg-7 d-flex mb-2 mb-lg-0">
+                            <button type="button" class="btn-close btn-sm scale" aria-label="Close"></button>
+                            <select class="form-select form-select-sm" aria-label="">
+                              <option selected="">2 Adults</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-3 col-8 ps-5 ps-lg-0 d-flex gap-1">
+                            <input class="w-80px text-center form-control form-control-sm" min="1" value="1"
+                              type="number" id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                            <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                          </div>
+                          <div class="col-lg-2 col-4 text-end">
+                            <span class="offer fs-6 fw-normal">$3,070</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="row py-2 border-top border-primary border-opacity-25 g-0">
+                        <div class="col-6 fs-6 fw-bold">Total</div>
+                        <div class="col-6 fs-6 fw-bold text-end">$75</div>
+                        <div class="col-12 mt-3 form-request">
+                          <div class="mb-3 position-relative">
+                            <textarea rows="2" cols="8" name="special_request"
+                              placeholder="If you have any special requests (special dietary requirements, child car seat, kid meal, anniversary...), please let us know."
+                              id="txtSpecial_request" class="form-control form-control-edit"></textarea>
+                            <label for="txtSpecial_request" class="form-label label-control-2">Special Request (subject
+                              to availability)</label>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                    <ul class="list-unstyled scroll-ver">
+                      <li class="row py-2 align-items-start">
+                        <div class="col-md-7">
+                          <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                            <input type="checkbox" checked="checked" name="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-3 col-8 d-flex gap-1">
+                          <input class="w-80px text-center form-control form-control-sm" min="1" value="1" type="number"
+                            id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                          <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                        </div>
+                        <div class="col-md-2 col-4 text-end">
+                          <span class="offer fs-6 fw-normal">$3,070</span>
+                        </div>
+                      </li>
+                      <li class="row py-2 align-items-start">
+                        <div class="col-md-7">
+                          <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                            <input type="checkbox" checked="checked" name="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-3 col-8 d-flex gap-1">
+                          <input class="w-80px text-center form-control form-control-sm" min="1" value="1" type="number"
+                            id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                          <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                        </div>
+                        <div class="col-md-2 col-4 text-end">
+                          <span class="offer fs-6 fw-normal">$3,070</span>
+                        </div>
+                      </li>
+                      <li class="row py-2 align-items-start">
+                        <div class="col-md-7">
+                          <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                            <input type="checkbox" checked="checked" name="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-3 col-8 d-flex gap-1">
+                          <input class="w-80px text-center form-control form-control-sm" min="1" value="1" type="number"
+                            id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                          <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                        </div>
+                        <div class="col-md-2 col-4 text-end">
+                          <span class="offer fs-6 fw-normal">$3,070</span>
+                        </div>
+                      </li>
+                      <li class="row py-2 align-items-start">
+                        <div class="col-md-7">
+                          <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                            <input type="checkbox" checked="checked" name="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-3 col-8 d-flex gap-1">
+                          <input class="w-80px text-center form-control form-control-sm" min="1" value="1" type="number"
+                            id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                          <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                        </div>
+                        <div class="col-md-2 col-4 text-end">
+                          <span class="offer fs-6 fw-normal">$3,070</span>
+                        </div>
+                      </li>
+                      <li class="row py-2 align-items-start">
+                        <div class="col-md-7">
+                          <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                            <input type="checkbox" checked="checked" name="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-3 col-8 d-flex gap-1">
+                          <input class="w-80px text-center form-control form-control-sm" min="1" value="1" type="number"
+                            id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                          <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                        </div>
+                        <div class="col-md-2 col-4 text-end">
+                          <span class="offer fs-6 fw-normal">$3,070</span>
+                        </div>
+                      </li>
+                      <li class="row py-2 align-items-start">
+                        <div class="col-md-7">
+                          <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                            <input type="checkbox" checked="checked" name="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-3 col-8 d-flex gap-1">
+                          <input class="w-80px text-center form-control form-control-sm" min="1" value="1" type="number"
+                            id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                          <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                        </div>
+                        <div class="col-md-2 col-4 text-end">
+                          <span class="offer fs-6 fw-normal">$3,070</span>
+                        </div>
+                      </li>
+                      <li class="row py-2 align-items-start">
+                        <div class="col-md-7">
+                          <label class="container-chec-rad">Limousine Bus roundtrip Hanoi - Halong - Hanoi
+                            <input type="checkbox" checked="checked" name="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-3 col-8 d-flex gap-1">
+                          <input class="w-80px text-center form-control form-control-sm" min="1" value="1" type="number"
+                            id="txtNumber9" data-gtm-form-interact-field-id="0" />
+                          <span class="d-flex align-items-center px-2 bg-secondary bg-opacity-10">person</span>
+                        </div>
+                        <div class="col-md-2 col-4 text-end">
+                          <span class="offer fs-6 fw-normal">$3,070</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row py-2 border-top border-primary border-opacity-25 g-0">
+                      <div class="col-6 fs-6 fw-bold">Total</div>
+                      <div class="col-6 fs-6 fw-bold text-end">$75</div>
+                      <div class="col-12 mt-3 form-request">
+                        <div class="mb-3 position-relative">
+                          <textarea rows="2" cols="8" name="special_request"
+                            placeholder="If you have any special requests (special dietary requirements, child car seat, kid meal, anniversary...), please let us know."
+                            id="txtSpecial_request" class="form-control form-control-edit"></textarea>
+                          <label for="txtSpecial_request" class="form-label label-control-2">Special Request (subject
+                            to availability)</label>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex ps-auto ps-lg-5 flex-column gap-1">
+              <div class="d-flex flex-column InExclude text-start">
+                  <ul>
+                    <li>Welcome Drink</li>
+                    <li>Cruise Itinerary and Program</li>
+                    <li>Kayaking or Sampan boat</li>
+                    <li>Entrance and Sightseeing Fees</li>
+                    <li>In-house English-speaking Tour Guide</li>
+                    <li>Luxurious Cabins and Suites with A/C</li>
+                    <li>Vietnamese and International Lunch and Dinner</li>
+                    <li>Vietnamese and International Breakfast</li>
+                    <li>Insurance, Taxes and Service Charges</li>
+                    <li>
+                      Internet on the ship (subject to cellular network signal);
+                    </li>
+                    <li>
+                      Complimentary usage of ship facilities (exclusive of spa
+                      treatments); port or anchorage fees; taxes.
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Airfares, Car Transfers and Hotels</li>
+                    <li>Visa Arrangements</li>
+                    <li>Beverages, Crew and guide gratuities</li>
+                    <li>Personal expenses &amp; medical services</li>
+                    <li>All other services not clearly mentioned above</li>
+                  </ul>
+                </div>
+              <h2 class="fw-normal fs-4 text-primary mb-1">Contact information</h2>
+              <p class="text-secondary">We just need a few details to secure this best rate for you!</p>
+              <div class="form-request">
+                <div class="mb-3 position-relative">
+                  <input type="text" class="form-control form-control-edit" id="txtName" aria-describedby="Name"
+                    placeholder="&nbsp;">
+                  <label for="txtName" class="form-label label-control">First name <span
+                      class="text-danger">*</span></label>
+                  <div id="req1" class="form-text Warning">This field is required.</div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <input type="text" class="form-control form-control-edit" id="txtTen" aria-describedby="Name"
+                    placeholder="&nbsp;">
+                  <label for="txtTen" class="form-label label-control">Last name <span
+                      class="text-danger">*</span></label>
+                  <div id="req5" class="form-text Warning">This field is required.</div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <input type="email" class="form-control form-control-edit" id="txtEmail" aria-describedby="emailHelp"
+                    placeholder="&nbsp;">
+                  <label for="txtEmail" class="form-label label-control">Email address <span
+                      class="text-danger">*</span></label>
+                  <div id="req2" class="form-text Warning">This field is required.</div>
+                </div>
+
+                <div class="mb-3 position-relative">
+                  <input type="email" class="form-control form-control-edit" id="txtPhone" aria-describedby=""
+                    placeholder="&nbsp;">
+                  <label for="txtPhone" class="form-label label-control">Phone number</label>
+                  <div id="req3" class="form-text Warning">This field is required.</div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <select class="form-select form-select-edit grayout" id="ddlQuoctich" aria-describedby="">
+                    <option value="0">Select your country</option>
+                    <option value="246">Unknow</option>
+                    <option value="1">Afghanistan</option>
+                    <option value="2">Aland Islands</option>
+                    <option value="3">Albania</option>
+                    <option value="4">Algeria</option>
+                    <option value="5">American Samoa</option>
+                    <option value="6">Andorra</option>
+                    <option value="7">Angola</option>
+                    <option value="8">Antarctica </option>
+                    <option value="9">Antigua and Barbuda</option>
+                    <option value="10">Argentina</option>
+                    <option value="11">Armenia</option>
+                    <option value="12">Aruba</option>
+                    <option value="13">Austria</option>
+                    <option value="14">Azerbaijan</option>
+                    <option value="15">Bahamas</option>
+                    <option value="16">Bahrain</option>
+                    <option value="17">Bangladesh</option>
+                    <option value="18">Belarus</option>
+                    <option value="19">Belgium</option>
+                    <option value="20">Belize</option>
+                    <option value="21">Benin</option>
+                    <option value="22">Bhutan</option>
+                    <option value="23">Bolivia</option>
+                    <option value="24">Bosnia and Herzegovina</option>
+                    <option value="25">Botswana</option>
+                    <option value="26">Brazil</option>
+                    <option value="27">British Virgin Islands</option>
+                    <option value="28">British Indian Ocean Territory</option>
+                    <option value="29">Brunei Darussalam</option>
+                    <option value="30">Bulgaria</option>
+                    <option value="31">Burkina Faso</option>
+                    <option value="32">Cameroon</option>
+                    <option value="33">Burundi</option>
+                    <option value="34">Canada </option>
+                    <option value="35">Cape Verde</option>
+                    <option value="36">Cayman Islands </option>
+                    <option value="37">Central African Republic</option>
+                    <option value="38">Chile</option>
+                    <option value="39">China</option>
+                    <option value="40">Macao Special Administrative Region of China </option>
+                    <option value="41">Christmas Island</option>
+                    <option value="42">Cocos (Keeling) Islands</option>
+                    <option value="43">Colombia</option>
+                    <option value="44">Comoros</option>
+                    <option value="45">Congo (Brazzaville) </option>
+                    <option value="46">Congo, Democratic Republic of the </option>
+                    <option value="47">Japan</option>
+                    <option value="48">Montserrat</option>
+                    <option value="49">Cook Islands </option>
+                    <option value="50">Costa Rica</option>
+                    <option value="51">Côte d'Ivoire</option>
+                    <option value="52">Croatia</option>
+                    <option value="53">Cuba</option>
+                    <option value="54">Cyprus</option>
+                    <option value="55">Czech Republic</option>
+                    <option value="56">Denmark</option>
+                    <option value="57">Egypt</option>
+                    <option value="58">Djibouti</option>
+                    <option value="59">Dominica</option>
+                    <option value="60">Dominican Republic</option>
+                    <option value="61">Ecuador</option>
+                    <option value="62">El Salvador</option>
+                    <option value="63">Equatorial Guinea</option>
+                    <option value="64">Eritrea</option>
+                    <option value="65">Estonia</option>
+                    <option value="66">Ethiopia</option>
+                    <option value="67">Falkland Islands (Malvinas) </option>
+                    <option value="68">Fiji</option>
+                    <option value="69">Finland</option>
+                    <option value="70">France</option>
+                    <option value="71">French Guiana</option>
+                    <option value="72">French Polynesia</option>
+                    <option value="73">French Southern Territories </option>
+                    <option value="74">Gabon</option>
+                    <option value="75">Georgia</option>
+                    <option value="76">Germany </option>
+                    <option value="77">Ghana</option>
+                    <option value="78">Greece</option>
+                    <option value="79">Greenland</option>
+                    <option value="80">Grenada</option>
+                    <option value="81">Guadeloupe</option>
+                    <option value="82">Guam</option>
+                    <option value="83">Guatemala</option>
+                    <option value="84">Guinea</option>
+                    <option value="85">Guinea-Bissau</option>
+                    <option value="86">Guyana</option>
+                    <option value="87">Haiti</option>
+                    <option value="88">Holy See (Vatican City State)</option>
+                    <option value="89">Honduras</option>
+                    <option value="90">Hungary</option>
+                    <option value="91">Iceland</option>
+                    <option value="92">India</option>
+                    <option value="93">Indonesia</option>
+                    <option value="94">Iran, Islamic Republic of</option>
+                    <option value="95">Iraq</option>
+                    <option value="96">Ireland</option>
+                    <option value="97">Isle of Man </option>
+                    <option value="98">Israel </option>
+                    <option value="99">Italy </option>
+                    <option value="100">Jamaica</option>
+                    <option value="101">Jersey</option>
+                    <option value="102">Jordan</option>
+                    <option value="103">Kazakhstan</option>
+                    <option value="104">Kiribati</option>
+                    <option value="105">Korea, Democratic People's Republic of </option>
+                    <option value="106">Korea, Republic of </option>
+                    <option value="107">Kuwait</option>
+                    <option value="108">Lao PDR</option>
+                    <option value="109">Latvia</option>
+                    <option value="110">Lebanon</option>
+                    <option value="111">Lesotho</option>
+                    <option value="112">Liberia</option>
+                    <option value="113">Liechtenstein</option>
+                    <option value="114">Lithuania</option>
+                    <option value="115">Luxembourg</option>
+                    <option value="116">Macedonia, Republic of</option>
+                    <option value="117">Malawi</option>
+                    <option value="118">Malaysia</option>
+                    <option value="119">Maldives</option>
+                    <option value="120">Mali</option>
+                    <option value="121">Malta</option>
+                    <option value="122">Marshall Islands</option>
+                    <option value="123">Martinique</option>
+                    <option value="124">Mauritania</option>
+                    <option value="125">Mayotte</option>
+                    <option value="126">Mexico</option>
+                    <option value="127">Micronesia, Federated States of</option>
+                    <option value="128">Moldova</option>
+                    <option value="129">Monaco</option>
+                    <option value="130">Montenegro</option>
+                    <option value="131">Morocco</option>
+                    <option value="132">Mozambique</option>
+                    <option value="133">Myanmar</option>
+                    <option value="134">Nauru</option>
+                    <option value="135">Nepal</option>
+                    <option value="136">Netherlands</option>
+                    <option value="137">Netherlands Antilles</option>
+                    <option value="138">New Zealand</option>
+                    <option value="139">Nicaragua</option>
+                    <option value="140">Niger</option>
+                    <option value="141">Nigeria</option>
+                    <option value="142">Niue </option>
+                    <option value="143">Norfolk Island </option>
+                    <option value="144">Northern Mariana Islands</option>
+                    <option value="145">Oman</option>
+                    <option value="146">Pakistan</option>
+                    <option value="147">Palau</option>
+                    <option value="148">Palestinian Territory, Occupied</option>
+                    <option value="149">Papua New Guinea</option>
+                    <option value="150">Peru</option>
+                    <option value="151">Philippines</option>
+                    <option value="152">Poland</option>
+                    <option value="153">Qatar</option>
+                    <option value="154">Romania</option>
+                    <option value="155">Rwanda</option>
+                    <option value="156">Saint Kitts and Nevis</option>
+                    <option value="157">Saint Pierre and Miquelon </option>
+                    <option value="158">Samoa</option>
+                    <option value="159">Sao Tome and Principe</option>
+                    <option value="160">Saudi Arabia</option>
+                    <option value="161">Serbia</option>
+                    <option value="162">Sierra Leone</option>
+                    <option value="163">Slovakia</option>
+                    <option value="164">Slovenia</option>
+                    <option value="165">South Africa</option>
+                    <option value="166">Spain</option>
+                    <option value="167">Sri Lanka</option>
+                    <option value="168">Sudan</option>
+                    <option value="169">Swaziland</option>
+                    <option value="170">Sweden</option>
+                    <option value="171">Switzerland</option>
+                    <option value="172">Syrian Arab Republic </option>
+                    <option value="173">Tajikistan</option>
+                    <option value="174">Thailand</option>
+                    <option value="175">Togo</option>
+                    <option value="176">Tokelau </option>
+                    <option value="177">Tonga</option>
+                    <option value="178">Trinidad and Tobago</option>
+                    <option value="179">Turkey</option>
+                    <option value="180">Tuvalu</option>
+                    <option value="181">Uruguay</option>
+                    <option value="182">Ukraine</option>
+                    <option value="183">United Arab Emirates</option>
+                    <option value="184">United States of America</option>
+                    <option value="185">Zimbabwe</option>
+                    <option value="186">Vanuatu</option>
+                    <option value="187">Viet Nam</option>
+                    <option value="188">Virgin Islands, US </option>
+                    <option value="189">Paraguay</option>
+                    <option value="190">Wallis and Futuna Islands </option>
+                    <option value="191">Yemen</option>
+                    <option value="192">Pitcairn </option>
+                    <option value="193">Portugal</option>
+                    <option value="194">Réunion</option>
+                    <option value="195">Russian Federation </option>
+                    <option value="196">Saint Helena </option>
+                    <option value="197">Saint Lucia</option>
+                    <option value="198">Saint-Martin (French part)</option>
+                    <option value="199">Saint Vincent and Grenadines</option>
+                    <option value="200">Senegal</option>
+                    <option value="201">Seychelles</option>
+                    <option value="202">Singapore</option>
+                    <option value="203">Solomon Islands</option>
+                    <option value="204">South Georgia and the South Sandwich Islands</option>
+                    <option value="205">Svalbard and Jan Mayen Islands </option>
+                    <option value="206">Taiwan, Republic of China </option>
+                    <option value="207">Tanzania *, United Republic of </option>
+                    <option value="208">Tunisia</option>
+                    <option value="209">Turkmenistan</option>
+                    <option value="210">Turks and Caicos Islands </option>
+                    <option value="211">United Kingdom</option>
+                    <option value="212">United States Minor Outlying Islands </option>
+                    <option value="213">Venezuela (Bolivarian Republic of)</option>
+                    <option value="214">Western Sahara</option>
+                    <option value="215">Saint-Barthélemy</option>
+                    <option value="216">Anguilla</option>
+                    <option value="217">Australia</option>
+                    <option value="218">Barbados</option>
+                    <option value="219">Bermuda</option>
+                    <option value="220">Bouvet Island</option>
+                    <option value="221">Cambodia</option>
+                    <option value="222">Chad</option>
+                    <option value="223">Hong Kong Special Administrative Region of China</option>
+                    <option value="224">Faroe Islands</option>
+                    <option value="225">Gambia</option>
+                    <option value="226">Gibraltar </option>
+                    <option value="227">Guernsey</option>
+                    <option value="228">Heard Island and Mcdonald Islands</option>
+                    <option value="229">Kenya</option>
+                    <option value="230">Kyrgyzstan</option>
+                    <option value="231">Libyan Arab Jamahiriya </option>
+                    <option value="232">Mauritius</option>
+                    <option value="233">Mongolia</option>
+                    <option value="234">New Caledonia</option>
+                    <option value="235">Namibia</option>
+                    <option value="236">Norway</option>
+                    <option value="237">Panama</option>
+                    <option value="238">Puerto Rico</option>
+                    <option value="239">San Marino</option>
+                    <option value="240">Somalia</option>
+                    <option value="241">Suriname *</option>
+                    <option value="242">Timor-Leste</option>
+                    <option value="243">Uganda</option>
+                    <option value="244">Uzbekistan</option>
+                    <option value="245">Zambia</option>
+                    <option value="247">Madagascar</option>
+                  </select>
+                  <label for="ddlQuoctich" class="form-label label-control">Country/Region <span
+                      class="text-danger">*</span></label>
+                  <div id="req4" class="form-text Warning">This field is required.</div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <select class="form-select form-select-edit grayout" id="ddlNguonBK" aria-describedby=""
+                    placeholder="&nbsp;">
+                    <option value="0">Select</option>
+                    <option value="1">Walk-in / Telephone</option>
+                    <option value="2">Online Booking Engine</option>
+                    <option value="3">Booking.com</option>
+                    <option value="4">Expedia</option>
+                    <option value="5">Agoda</option>
+                    <option value="6">Trip Connect</option>
+                    <option value="7">Company</option>
+                    <option value="8">Guest Member</option>
+                    <option value="9">Owner</option>
+                    <option value="10">Returning Guest</option>
+                    <option value="11">Other Travel Agency</option>
+                  </select>
+                  <label for="ddlNguonBK" class="form-label label-control">You First Know About Via <span
+                      class="text-danger"></span></label>
+
+                </div>
+                <div class="mb-3 position-relative">
+                  <textarea rows="3" cols="8" name="special_request"
+                    placeholder="If you have any special requests (special dietary requirements, child car seat, kid meal, anniversary...), please let us know."
+                    id="txtSpecial_request" class="form-control form-control-edit"></textarea>
+                  <label for="txtSpecial_request" class="form-label label-control-2">Special Request (subject to
+                    availability)</label>
+
+                </div>
+              </div>
+              <div class="total-money">
+                <hr class="mb-4 mt-4">
+                <div class="d-flex justify-content-between mb-1">
+                  <h2 class="fw-normal fs-4 mb-3">Total</h2>
+                  <span class="fw-bold text-end fs-4 totalPriceBK">$421.26</span>
+                  <input type="hidden" id="hdTotal" value="386.26">
+                </div>
+                <div class="d-flex justify-content-between form-small">
+                  <span>10% VAT</span>
+                  <span>Included</span>
+                </div>
+                <div class="d-flex justify-content-between form-small">
+                  <span>5% Service Charge</span>
+                  <span>Included</span>
+                </div>
+                <div class="d-flex justify-content-between form-small">
+                  <span>Service Charge</span>
+                  <span>Included</span>
+                </div>
+                  <div class="payment-option mt-5">
+                                <h2 class="fw-normal fs-4 text-primary mb-1">PAYMENT OPTIONS</h2>
+                                <p>Major credit card Visa, Master Card, JCB, Union Pay, Amex</p>
+                                <div class="d-flex mt-4 gap-3 justify-content-between mx-n1">
+                                    <div class="card form-check text-center w-100 active p-0" style="display:none !important;">
+                                        <input class="form-check-input form-check-payment d-none" type="radio" name="rdoPayment" id="rdoPayment30">
+                                        <label class="card-body w-100" for="rdoPayment30"><span class="card-title fw-normal fs-5">Deposit 50%</span> <span class="card-subtitle fs-2 my-3 text-price DepositValue"></span></label>
+                                    </div>
+                                    <div class="card form-check text-center w-100 active p-0 Payment100">
+                                        <input class="form-check-input form-check-payment d-none" type="radio" name="rdoPayment" id="rdoPayment100" checked="checked">
+                                        <label class="card-body w-100" for="rdoPayment100"><span class="card-title fw-normal fs-5">Full payment</span> <span class="card-subtitle fs-2 my-3 text-price Fullpayment"></span></label>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+
+                                    <label class="container-chec-rad mb-0 text-start" for="cbConfirm">I read and accepted the terms & conditions<a class="color" href="/booking-conditions" target="_blank">terms & conditions</a>
+                                         <input type="checkbox" class="checkmark" id="cbConfirm">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div id="req7" class="form-text Warning">This field is required.</div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="javascript:void(0)" onclick="SendBK()" class="btn btn-primary btn-lg text-uppercase">Proceed to Payment<i class="ri-check-line ms-1"></i></a>
+                                    <div class="w-100 my-3"></div>
+
+                                    <div class="w-100 my-3"></div>
+
+                                    <div style="display: none;">
+                                        <input type="hidden" id="hdVC" value="0" />
+                                        <input type="hidden" id="hdVCC" value="0" />
+                                        <input type="hidden" id="hdVCV" value="0" />
+                                    </div>
+                                </div>
+                                <div class="policy d-flex flex-column">
+                                    <a style="background: #e4f6df !important; padding: 10px;" href="#" class="text-secondary d-flex align-items-center mb-3" data-bs-toggle="collapse" data-bs-target="#collapseincluded" aria-expanded="false" aria-controls="collapseincluded">Review what's included in your booking policy<i class="ri-arrow-down-s-line fs-5 ms-auto"></i></a>
+
+                                    <div class="collapse" id="collapseincluded" style="text-align:left;">
+                                        <h3 class="d-flex flex-column">Price Inclusions</h3>
+                                        <div class="d-flex flex-column InExclude Include">
+                                        </div>
+                                        <h3 class="d-flex flex-column">Price Exclusions</h3>
+                                        <div class="d-flex flex-column InExclude Exclude">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+              </div>
+            </div>
+          </div>
+          <ul class="d-flex justify-content-center align-items-center gap-3 list-unstyled mt-4 note-avaible">
+            <li class="d-flex align-items-center gap-1">
+              <span>icon</span>
+              <span>Text</span>
+            </li>
+            <li class="d-flex align-items-center gap-1">
+              <span>icon</span>
+              <span>Text</span>
+            </li>
+            <li class="d-flex align-items-center gap-1">
+              <span>icon</span>
+              <span>Text</span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+  </main>
+   {{> layouts/footer }}
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/onlybook.js"></script>
+ <script>
+  document.querySelectorAll('.accordion-button').forEach(btn => {
+    const panel = document.querySelector(btn.dataset.target);
+
+    btn.addEventListener('click', () => {
+      const isOpen = panel.classList.contains('show');
+
+      if (isOpen) {
+        panel.classList.remove('show');
+        panel.style.maxHeight = null;
+        btn.classList.add('collapsed');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        panel.classList.add('show');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        btn.classList.remove('collapsed');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+
+</body>
+
+</html>

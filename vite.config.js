@@ -76,6 +76,11 @@ export default defineConfig({
 				about: resolve(__dirname, "src", "about.html"),
 				contact: resolve(__dirname, "src", "contact.html"),
 				booking: resolve(__dirname, "src", "booking.html"),
+				book: resolve(__dirname, "src", "book.html"),
+				book2: resolve(__dirname, "src", "book2.html"),
+				offers: resolve(__dirname, "src", "offers.html"),
+				book3: resolve(__dirname, "src", "book3.html"),
+				book4: resolve(__dirname, "src", "book4.html"),
 			},
 			output: {
 				assetFileNames: (assetInfo) => {

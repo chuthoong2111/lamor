@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cruise</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+
+</head>
+
+<body>
+    {{> layouts/header }}
+    {{> banners/banner-oneimage2 }}
+    <section class="px-3 py-16" id="-1">
+        <div class="card-text flex flex-col gap-6 xl:w-6/12 text-center mx-auto items-center justify-center">
+            <h1 class="card-title text-3xl lg:text-5xl font-display first-letter:text-primary leading-tight uppercase">
+                Offers & Promotion
+            </h1>
+            <div class="card-body text-xl font-light text-center">
+                In the same way the glaciers carved the mountains and lakes, awe and
+                inspiration will reshape you. Unleash your inner explorer and discover the
+                magic of our mountain haven.
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-16 px-4 bg-white" id="-7">
+
+        <div class="container mx-auto">
+            <div class="grid gap-6 lg:grid-cols-3 lg:gap-8 2xl:gap-10 items-start">
+                {{#each (range 1 6)}}
+                <div class=" card w-full flex flex-col !gap-0 !max-w-none">
+<a href="#" class="relative">
+     <img class="object-cover aspect-[3/2]" src="https://placehold.jp/600x400.png"
+                                loading="lazy" alt="600x400" />
+                                <div class="ribbon"><span class="ribbon__content">Promotion</span></div>
+</a>
+                            <div class="flex w-full justify-around px-4 bg-primary text-white py-2 text-sm">
+                                <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79zm9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75zM7.5 3H4c-.55 0-1 .45-1 1c0 9.39 7.61 17 17 17c.55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1c-1.24 0-2.45-.2-3.57-.57a.8.8 0 0 0-.31-.05c-.26 0-.51.1-.71.29l-2.2 2.2a15.15 15.15 0 0 1-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.4 11.4 0 0 1 8.5 4c0-.55-.45-1-1-1"/></svg> <span>+84 392 88 9379</span></div>
+                                <a href="mailto:info@lamourcruise.com" class="flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" d="m3 5l7.586 7.586a2 2 0 0 0 2.828 0L21 5v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" opacity="0.16"/><path fill="currentColor" d="M3 5V4a1 1 0 0 0-1 1zm18 0h1a1 1 0 0 0-1-1zM3 6h18V4H3zm17-1v12h2V5zm-1 13H5v2h14zM4 17V5H2v12zm1 1a1 1 0 0 1-1-1H2a3 3 0 0 0 3 3zm15-1a1 1 0 0 1-1 1v2a3 3 0 0 0 3-3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 5l9 9l9-9"/></g></svg>
+                                    <span>info@lamourcruise.com</span></a>
+                            </div>
+                             <div class="card-body p-4">
+                                 <h3 class="card-title text-xl mb-3 font-display">
+                            <a class="border-s-2 border-primary pl-4" href="#">
+                                Premier Two Queen Guestroom
+                            </a>
+                        </h3>
+                        <div class="card-text line-clamp-5">
+
+                            Emotion cruise is designed based on the idea of contemporary,
+                            luxurious, quintessential style. She inherited the precious experience
+                            of her sister - Stellar of the Seas, to make us stand out and unique
+                            from the other one in Ha Long - Lan Ha Bay. With designed itineraries,
+                            the delicious and abundant menu, professional service, and
+                            well-trained staff, Emotion cruise promises to bring customers a truly
+                            memorable experience.
+                        </div>
+                             </div>
+
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    {{> layouts/footer }}
+</body>
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>

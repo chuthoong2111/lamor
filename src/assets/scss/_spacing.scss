@@ -1,0 +1,49 @@
+
+@use "variables" as *;
+
+/* ===== Spacing Utilities ===== */
+@each $size, $value in $spacers {
+
+  .m-#{$size} { margin: $value; }
+  .p-#{$size} { padding: $value; }
+
+  .mt-#{$size} { margin-top: $value; }
+  .mb-#{$size} { margin-bottom: $value; }
+  .ms-#{$size} { margin-left: $value; }
+  .me-#{$size} { margin-right: $value; }
+
+  .pt-#{$size} { padding-top: $value; }
+  .pb-#{$size} { padding-bottom: $value; }
+  .ps-#{$size} { padding-left: $value; }
+  .pe-#{$size} { padding-right: $value; }
+
+  .mx-#{$size} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .my-#{$size} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .px-#{$size} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$size} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+/* ===== Responsive spacing ===== */
+@each $bp, $bp-width in $breakpoints {
+  @media (min-width: $bp-width) {
+    @each $size, $value in $spacers {
+      .mt-#{$bp}-#{$size} { margin-top: $value; }
+      .p-#{$bp}-#{$size} { padding: $value; }
+    }
+  }
+}

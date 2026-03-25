@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/fix.css" />
+<link rel="stylesheet" href="./css/book.css" />
+<link rel="stylesheet" href="./css/onlybooking.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://lamourcruise.com/assets/css/main.css" />
+
+<body>
+      {{> layouts/header }}
+    <div class="header d-none d-lg-block" style="height:100px;"></div>
+  <main class="layout-booking">
+    <section class="d-flex flex-column gap-4 w-100">
+      <h1 class="text-center fs-5 fw-bold">Select your dates at Amanoi</h1>
+      <div class="text-center container">
+        <ul class="m-auto list-unstyled step-area">
+          <li class="steptag position-relativ active">
+            <a href="#">
+              <span class="icon"><i class="ri-check-fill"></i></span>
+              <span>name step</span>
+            </a>
+          </li>
+          <li class="position-relative steptag active">
+            <a href="">
+              <span class="icon">2</span>
+              <span>name step</span>
+            </a>
+          </li>
+          <li class="position-relative steptag">
+            <a href="#">
+              <span class="icon">3</span>
+              <span>name step</span>
+            </a>
+          </li>
+          <li class="position-relative steptag">
+            <a href="#">
+              <span class="icon">4</span>
+              <span>name step</span>
+            </a>
+          </li>
+        </ul>
+        <div class="mx-auto col-lg-8">
+          <ul class="d-flex flex-column gap-2 mt-3 list-unstyled infomation-book">
+            <li class="d-flex">
+              <label for="text">
+                Cruise
+              </label>
+              <span class="content">
+                Indochine Premium Halong
+              </span>
+              <div class="action">
+                <a href="#">Edit</a>
+              </div>
+            </li>
+            <li class="d-flex">
+              <label for="text">
+                Depart
+              </label>
+              <span class="content">
+                31/05/2024 (from 11.30 AM to 11.55 AM)
+              </span>
+              <div class="action">
+                <a href="#">Edit</a>
+              </div>
+            </li>
+            <li class="d-flex">
+              <label for="text">
+                Return
+              </label>
+              <span class="content">
+                01/06/2024 (from 11.00 AM to 11.15 AM)
+              </span>
+              <div class="action">
+                <label class="container-chec-rad">2D1N
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark radio"></span>
+                </label>
+                <label class="container-chec-rad">3D2N
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark radio"></span>
+                </label>
+              </div>
+            </li>
+            <li class="d-flex">
+              <label for="text">
+                Number of cabin
+              </label>
+              <span class="content">
+                3 Room - 4 Adult - 0 Child
+              </span>
+              <div class="action">
+                <a href="#">Edit</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto col-lg-8">
+
+          <ul class="room-group d-flex flex-column gap-2 list-unstyled">
+            <li class="flex-wrap flex-lg-nowrap item-room">
+              <div class="img" style="background: #eee">
+
+              </div>
+              <div class="d-flex flex-column justify-content-center content">
+                Select room please!
+              </div>
+              <div class="me-0 mt-auto mb-2 action">
+                <a href="#" class="d-none">Edit</a>
+                <a href="#" class="mr-0">Remove</a>
+              </div>
+            </li>
+            <!-- <li class="item-room haveroom">
+              <div class="img"
+                style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;">
+              </div>
+              <div class="d-flex flex-column content">
+                <strong>Lake Pavilion</strong>
+                <span>Special Offer - $129.60 /person</span>
+              </div>
+              <div class="action">
+                <a href="#" class="d-block">Edit</a>
+                <a href="#">Remove</a>
+              </div>
+            </li> -->
+            <li class="flex-wrap flex-xl-nowrap item-room haveroom">
+              <div class="img" style="background: #eee url('../images/1.jpg') center center / cover no-repeat;">
+              </div>
+              <div class="d-flex flex-column flex-grow-1 content">
+                <div class="d-flex flex-column gap-2 content form-request">
+                  <span class="text-secondary">ROOM 1</span>
+                  <div class="d-flex flex-row justify-content-lg-start gap-2 mb-2">
+                    <strong>Lake Pavilion</strong>
+                    <span>Special Offer</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="flex-ba text-secondary label">Guests:</span>
+                    <div class="d-flex gap-2 w-100">
+                      <div class="position-relative flex-grow-1">
+                        <select class="form-select-edit form-select small" aria-describedby="">
+                          <option value="0">
+                            2
+                          </option>
+                        </select>
+                        <label class="form-label label-control">Adults</label>
+                      </div>
+                      <div class="position-relative flex-grow-1">
+                        <select class="form-select-edit form-select small" aria-describedby="">
+                          <option value="0">
+                            2
+                          </option>
+                        </select>
+                        <label class="form-label label-control">Child (5-11)</label>
+                      </div>
+                      <div class="position-relative flex-grow-1">
+                        <select class="form-select-edit form-select small" aria-describedby="">
+                          <option value="0">
+                            2
+                          </option>
+                        </select>
+                        <label class="form-label label-control">Infants (0 -4)</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center my-2">
+                    <span class="text-secondary label">Bed preference:</span>
+                    <div class="d-flex gap-3 w-100">
+                      <label class="container-chec-rad">2D1N
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark radio"></span>
+                      </label>
+                      <label class="container-chec-rad">2D1N
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark radio"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column flex-fill flex-lg-row flex-md-column flex-sm-row flex-xl-column align-items-end align-items-md-end align-items-sm-start gap-2 rate-room">
+                <span class="text-secondary">RATE</span>
+                <div
+                  class="d-flex flex-column flex-lg-row flex-md-column flex-sm-row flex-xl-column align-items-end align-items-lg-center align-items-xl-end gap-lg-2 gap-md-0 text-end lh-sm">
+                  <span class="offer fs-6 fw-normal">$3,070</span>
+                  <span class="text-secondary offer small">Excluding taxes &amp; fees</span>
+                </div>
+                <div class="my-2 ms-auto me-0 mt-auto action">
+                  <a href="#">Remove</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="d-flex">
+              <a href="#" class="opacity-50">Cancellation policy:
+                <i class="ri-file-info-line"></i></a>
+            </li>
+          </ul>
+          <div class="total-money">
+            <hr class="mt-3 mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <h2 class="mb-3 fw-normal fs-4">Total</h2>
+              <span class="text-end fw-bold fs-4 totalPriceBK">$421.26</span>
+              <input type="hidden" id="hdTotal" value="386.26">
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="rounded-0 btn-booking xl"> Next step <i class="ri-arrow-right-line"></i></button>
+            </div>
+            <hr class="mt-3 mb-5">
+            <div class="text-start indochina accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="title fs-5 accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Price Inclusions</button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" >
+                                        <div class="accordion-body Inclusions">
+                                            <ul>
+	<li>
+		2-days cruise itinerary and program in Ha Long Bay</li>
+	<li>
+		1 night at luxury room with en-suite bathroom, air conditioning</li>
+	<li>
+		Welcome Drink/ Complimentary In-Room Snack</li>
+	<li>
+		1 lunch/1 dinner/1 light breakfast/ 1 brunch</li>
+	<li>
+		Two bottles of water in room daily</li>
+	<li>
+		Taichi session &amp; cooking class demonstration</li>
+	<li>
+		Kayaking or bamboo boat rowing</li>
+	<li>
+		In-house English-speaking Tour Guide</li>
+	<li>
+		Internet on the cruise</li>
+	<li>
+		Complimentary usage of cruise facilities (exclusive of massage)</li>
+	<li>
+		Onboard insurance, tax, and service charges</li>
+	<li>
+		Entrance and sightseeing fees</li>
+</ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="title fs-5 accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">Price Exclusions</button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body Exclusion">
+                                            <ul>
+	<li>
+		Airfares, Car Transfers and Hotels</li>
+	<li>
+		Visa arrangements</li>
+	<li>
+		Beverages &amp; Massage</li>
+	<li>
+		Personal expenses &amp; medical services</li>
+	<li>
+		Tips and other expenses not mentioned in inclusions</li>
+</ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item" style="display: none !important;">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="collapsed title fs-5 accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">Cruise Policy</button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                        <div class="accordion-body CruisePolicy">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item" style="display: none !important;">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                        <button class="collapsed title fs-5 accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">Booking Policy</button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                        <div class="accordion-body BookingPolicy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-4 col-lg-12">
+          <p class="fw-bold mb-3">All stays include:</p>
+          <div class="d-flex flex-column list-room">
+            <div class="d-flex flex-column">
+            <div class="d-flex one-room">
+              <div class="img"
+                style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;">
+                <a data-fancybox="gallery2" href="https://lipsum.app/id/60/1600x1200">
+                  <img src="https://lipsum.app/id/60/200x150" width="200" height="150" alt="" />
+                </a>
+                <div class="icon">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="34" height="34" fill="#1F1E1B" fill-opacity="0.7" />
+                    <path
+                      d="M8 26V20H10V22.6L13.1 19.5L14.5 20.9L11.4 24H14V26H8ZM20.9 14.5L19.5 13.1L22.6 10H20V8H26V14H24V11.4L20.9 14.5Z"
+                      fill="white" />
+                  </svg>
+
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-2 content">
+                <div class="room-name fs-5 fw-bold">
+                  Executive Suite
+                </div>
+                <div class="room-dec">
+                  Eet within Nui Chua National Park, The Two-Bedroom Ocean Pool Family Residence is ideal for families
+                  with its dramatic private infinity pool.
+                </div>
+                <div class="my-3 room-price">
+                  <div class="item-room-price">
+                    <span class="offer fw-semibold">Special Offer</span>
+                    <div class="d-flex flex-column lh-sm">
+                      <span class="offer fw-normal fs-5">$3,070/ night</span>
+                      <span class="text-secondary offer small">Excluding taxes & fees</span>
+                    </div>
+                    <button class="rounded-0 btn-booking">
+                      Book now
+                    </button>
+                  </div>
+                  <div class="item-room-price">
+                    <span class="offer fw-semibold">Special Offer</span>
+                    <div class="d-flex flex-column lh-sm">
+                      <span class="offer fw-normal fs-5">$129.60 /person</span>
+                      <span class="text-secondary offer small">Excluding taxes & fees</span>
+                    </div>
+                    <button class="rounded-0 btn-booking">
+                      Book now
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="room-amenities container-fluid">
+                  <ul class="list-unstyled row row-cols-2 row-cols-md-4">
+                     <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon" style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="d-flex one-room">
+              <div class="img"
+                style="background: var(--primary-light) url('https://lipsum.app/id/60/1600x1200') center center / cover no-repeat;">
+                <a data-fancybox="gallery1" href="https://lipsum.app/id/60/1600x1200"> <img
+                    src="https://lipsum.app/id/60/200x150" width="200" height="150" alt="" /></a>
+                <div class="icon">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="34" height="34" fill="#1F1E1B" fill-opacity="0.7" />
+                    <path
+                      d="M8 26V20H10V22.6L13.1 19.5L14.5 20.9L11.4 24H14V26H8ZM20.9 14.5L19.5 13.1L22.6 10H20V8H26V14H24V11.4L20.9 14.5Z"
+                      fill="white" />
+                  </svg>
+
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-2 content">
+                <div class="room-name fs-5 fw-bold">
+                  Executive Suite
+                </div>
+                <div class="room-dec">
+                  Eet within Nui Chua National Park, The Two-Bedroom Ocean Pool Family Residence is ideal for families
+                  with its dramatic private infinity pool.
+                </div>
+                <div class="my-3 room-price">
+                  <div class="item-room-price">
+                    <span class="offer fw-semibold">Special Offer</span>
+                    <div class="d-flex flex-column lh-sm">
+                      <span class="offer fw-normal fs-5">$3,070/ night</span>
+                      <span class="text-secondary offer small">Excluding taxes & fees</span>
+                    </div>
+                    <button class="rounded-0 btn-booking">
+                      Book now
+                    </button>
+                  </div>
+                  <div class="item-room-price">
+                    <span class="offer fw-semibold">Special Offer</span>
+                    <div class="d-flex flex-column lh-sm">
+                      <span class="offer fw-normal fs-5">$3,070/ night</span>
+                      <span class="text-secondary offer small">Excluding taxes & fees</span>
+                    </div>
+                    <button class="rounded-0 btn-booking">
+                      Book now
+                    </button>
+                  </div>
+                </div>
+                <div class="room-amenities container-fluid">
+                  <ul class="list-unstyled row row-cols-2 row-cols-md-4">
+                    <li class="d-flex flex-column gap-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                    <li class="d-flex flex-column gap-2 p-2 text-center col">
+                      <span class="img-icon"
+                        style="background: var(--primary-light) url('../images/1.jpg') center center / cover no-repeat;"></span>
+                      <span>445 sq. m (4,790 sq. ft)</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="display:none">
+      <a data-fancybox="gallery1" data-src="https://lipsum.app/id/61/1600x1200"
+        data-thumb="https://lipsum.app/id/61/120x80"></a>
+      <a data-fancybox="gallery1" data-src="https://lipsum.app/id/62/1600x1200"
+        data-thumb="https://lipsum.app/id/62/120x80"></a>
+      <a data-fancybox="gallery1" data-src="https://lipsum.app/id/63/1600x1200"
+        data-thumb="https://lipsum.app/id/63/120x80"></a>
+      <a data-fancybox="gallery2" data-src="https://lipsum.app/id/64/1600x1200"
+        data-thumb="https://lipsum.app/id/61/120x80"></a>
+      <a data-fancybox="gallery2" data-src="https://lipsum.app/id/65/1600x1200"
+        data-thumb="https://lipsum.app/id/62/120x80"></a>
+      <a data-fancybox="gallery2" data-src="https://lipsum.app/id/66/1600x1200"
+        data-thumb="https://lipsum.app/id/63/120x80"></a>
+    </div>
+  </main>
+   {{> layouts/footer }}
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/onlybook.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox]', {
+      //
+    });
+  </script>
+    <script>
+    const buttons = document.querySelectorAll('.accordion-button');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+
+        const isActive = this.classList.contains('active');
+
+        // Close all
+        buttons.forEach((btn) => {
+          btn.classList.remove('active');
+          btn.nextElementSibling.classList.remove('show');
+        });
+
+        // Toggle current
+        if (!isActive) {
+          this.classList.add('active');
+          content.classList.add('show');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
