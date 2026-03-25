@@ -178,3 +178,32 @@ h6 {
   border-right-color: transparent;
  @apply border-primary
 }
+@keyframes shine {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+   .button-dt2 {
+        background: conic-gradient(from 0deg, #FDF8F5, #544C4C, #544C4C, #FDF8F5, #544C4C, #544C4C, #544C4C, #FDF8F5);
+        background-size: 300% 300%;
+        animation: shine 6s ease-out infinite;
+        @apply flex mx-auto p-0.5 rounded-full text-white uppercase hover:scale-105 active:scale-100 transition duration-300;
+
+        span{
+            @apply bg-primary px-8 py-2.5 rounded-full font-medium text-white text-sm uppercase;
+        }
+    }
+.button-dt1 {
+
+        background-size: 300% 300%;
+        animation: shine 6s ease-out infinite;
+        @apply flex bg-primary mx-auto p-0.5 px-8 py-2.5 rounded-full font-medium text-white text-sm uppercase hover:scale-105 active:scale-100 transition duration-300;
+    }
